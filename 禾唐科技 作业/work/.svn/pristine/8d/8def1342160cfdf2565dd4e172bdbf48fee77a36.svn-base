@@ -1,0 +1,87 @@
+<extend name="Public:frameset"/>
+<block name="page-body">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/assets/home/pages/css/article.css" />
+<link rel>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+                <ul class="side-nav">
+                 <volist name="category_article" id="ca">
+
+                    <li>
+                        <a href="javascript:;">
+                        <span class="side-nav-icon"><i class=" glyphicon glyphicon-list-alt"></i>
+                        </span>
+                        <span class="side-nav-text">{$leftNav['0']}</span>
+                        </a>
+                    </li>
+                     </volist>
+
+
+                </ul>
+			</div>
+			<div class="col-md-8">
+                <div class="headline row">
+                    <div class="col-md-6 col-xs-12">
+                        <h3>招生简介</h3>
+                        <span class="triangle-lg glyphicon glyphicon-triangle-right"></span>
+                     </div>
+                    <div class="col-md-6 col-xs-12">
+                        <ol class="my-breadcrumb pull-right">
+                            <!-- <li><a href="#">首页</a></li>
+                            <li><a href="#">学院概述</a></li>
+                            <li class="active">招生简介</li> -->
+                  <li><a href="{:U('Index/index')}">首页</a></li>
+				 <empty name="oneName">					
+				 <else/>				
+			     <li>{$oneName}</li>
+			     								
+				 </empty>
+				<empty name="category_article">			
+			        <li>暂无文章</li>
+				<else/>			
+	            <li><a href="#">{$category_article[0]['category_name']}</a></li>
+				</empty> 
+ 
+                        </ol>
+                    </div>
+                </div>
+				<br/>
+				<hr/>
+                <volist name="category_article" id="ca">
+                    <div class="article-list">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-1">
+                            <a href="{:U('Article/detail',array('content_id'=>$ca['id']))}" id="{$ca['id']}" >{$ca['title']}</a>
+                            </div>
+                            <div class="col-md-3">{$ca['create_time']|date='Y-m-d',###}</div>
+                        </div>
+
+                    </div>
+                    <hr/>
+                </volist>
+			<div  class="pull-left" style="background-color: #52bca8;">
+				{$page}
+			</div>
+			</div>
+		</div>
+	</div>
+       <script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+<script type="text/javascript">
+/*var a = {$ca['id']};
+
+$('#a').on('click',function(){
+
+    alert($ca['id']);*/
+    //alert(1111);
+  /*  function changetext(id){
+     
+  alert(this.id);
+        
+    }
+*/
+
+   
+</script>
+
+</block>

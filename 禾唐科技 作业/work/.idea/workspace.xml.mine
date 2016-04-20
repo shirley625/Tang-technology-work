@@ -1,0 +1,1106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list readonly="true" id="bd9c5cd1-100b-4b21-a52a-94726c93e1d6" name="Default" comment="update -xhj-8-2">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Common/Conf/config.php" afterPath="$PROJECT_DIR$/Application/Common/Conf/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
+    <list id="1bcc0937-bfdb-4481-8cf7-049d05d07337" name="Failed commit: Default" comment="update - 谢志强 2015-7-27" />
+    <list id="136458d9-a961-411c-a07d-ebd20a4f9720" name="Failed commit: Default (2)" comment="update -xzq-2015-7-28" />
+    <list id="b24deac8-271c-4e42-b1cf-4ae588689113" name="Failed commit: Default (3)" comment="update -xzq-2015-7-28" />
+    <list id="506079fc-a42a-4ae2-ac42-637eaa054b6b" name="Failed commit: Default (4)" comment="update -xzq-2015-7-28" />
+    <list default="true" id="1f335dbf-8f36-442b-9e14-903be0aad3c5" name="Failed commit: Default (5)" comment="Sameen">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php" />
+    </list>
+    <ignored path="internation_edu.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" ignored="false" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="internation_edu" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="QuestionController.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Home/Controller/QuestionController.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3080">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuestionsAnswerModel.class.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Application/QuestionCategory/Model/QuestionsAnswerModel.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.4960981" vertical-offset="4053" max-vertical-offset="6270">
+              <caret line="164" column="0" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuestionCategoryModel.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/QuestionCategory/Model/QuestionCategoryModel.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1386" max-vertical-offset="5478">
+              <caret line="60" column="48" selection-start-line="60" selection-start-column="48" selection-end-line="60" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuestionsTeacherModel.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/QuestionCategory/Model/QuestionsTeacherModel.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7722">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuestionsModel.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/QuestionCategory/Model/QuestionsModel.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="4928">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuestionsGoodModel.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/QuestionCategory/Model/QuestionsGoodModel.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="66" max-vertical-offset="1452">
+              <caret line="41" column="28" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Application/Home/View/User/userLogout.html" />
+        <option value="$PROJECT_DIR$/Application/Home/Model/QuestionsModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/Home/Model/ScoreModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/Website/Conf/config.php" />
+        <option value="$PROJECT_DIR$/Public/assets/global/scripts/jquery.hyall.js" />
+        <option value="$PROJECT_DIR$/Public/assets/pages/scripts/friend-link.js" />
+        <option value="$PROJECT_DIR$/Application/QuestionCategory/Model/QuestionsAnswerModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/Home/Controller/QuestionController.class.php" />
+        <option value="$PROJECT_DIR$/Application/Common/Conf/config.php" />
+        <option value="$PROJECT_DIR$/Application/Home/Controller/ArticleController.class.php" />
+        <option value="$PROJECT_DIR$/Application/Home/View/Article/category.html" />
+        <option value="$PROJECT_DIR$/Public/assets/pages/styles/question-list.css" />
+        <option value="$PROJECT_DIR$/Application/Home/View/Question/questionList.html" />
+        <option value="$PROJECT_DIR$/Public/assets/pages/styles/article.css" />
+        <option value="$PROJECT_DIR$/Application/Home/View/GoodCourse/lesson.html" />
+        <option value="$PROJECT_DIR$/Application/Home/View/Question/myQuestion.html" />
+        <option value="$PROJECT_DIR$/Application/Home/View/Question/askQuestion.html" />
+        <option value="$PROJECT_DIR$/Application/Home/View/Score/score.html" />
+        <option value="$PROJECT_DIR$/Public/assets/global/styles/ie8-fix.css" />
+        <option value="$PROJECT_DIR$/Application/Common/View/HyFrame/login.html" />
+        <option value="$PROJECT_DIR$/Application/Home/View/Article/detail.html" />
+        <option value="$PROJECT_DIR$/Public/assets/global/scripts/public.js" />
+        <option value="$PROJECT_DIR$/Public/assets/pages/styles/login_home.css" />
+        <option value="$PROJECT_DIR$/Application/BasisInfo/Model/CourseModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/Home/Controller/UserController.class.php" />
+        <option value="$PROJECT_DIR$/Public/assets/pages/styles/login.css" />
+        <option value="$PROJECT_DIR$/Application/Home/View/User/login.html" />
+        <option value="$PROJECT_DIR$/Application/Home/View/User/pwd.html" />
+        <option value="$PROJECT_DIR$/Public/assets/pages/scripts/index_home.js" />
+        <option value="$PROJECT_DIR$/Application/Home/View/Index/index.html" />
+        <option value="$PROJECT_DIR$/Public/assets/global/styles/public.css" />
+        <option value="$PROJECT_DIR$/Application/Home/View/Public/frameset.html" />
+        <option value="$PROJECT_DIR$/Public/assets/pages/styles/index.css" />
+        <option value="$PROJECT_DIR$/Public/assets/global/scripts/hyframe.js" />
+        <option value="$PROJECT_DIR$/Application/International/Model/InternationalPrintModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/International/View/InternationalPrint/detail.html" />
+        <option value="$PROJECT_DIR$/Application/Home/Controller/BaseController.class.php" />
+        <option value="$PROJECT_DIR$/Application/Home/Model/DetailsModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/GoodCourse/Model/GoodCourseModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/GoodCourse/Model/GoodCoursePModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/Category/Model/DetailsModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/International/Model/InternationalModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/International/Model/InternationalSModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/QuestionCategory/Model/QuestionCategoryModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/BasisInfo/Model/LanguageModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/Website/Model/CarouselModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/Website/Model/FriendLinkModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/Category/Model/CategoryModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/Home/Model/CategoryModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/BasisInfo/Model/StudentModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1066" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="internation_edu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="internation_edu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SIS.JXNU" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="internation_edu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SIS.JXNU" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="internation_edu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SIS.JXNU" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QuestionCategory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="internation_edu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SIS.JXNU" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QuestionCategory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
+    <property name="FullScreen" value="false" />
+    <property name="options.lastSelected" value="vcs.Subversion" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="recentsLimit" value="5" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\wamp\www\svn\SIS.JXNU\Public\assets\global\img" />
+      <recent name="C:\wamp\www\svn\SIS.JXNU\Application\Website" />
+      <recent name="F:\wamp\www\internation_edu_admin\Application\Home\View\User" />
+      <recent name="F:\SVN\svn\SIS.JXNU\Application\Home\Controller" />
+      <recent name="F:\SVN\svn\SIS.JXNU\Application\Home\View\Question" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\wamp\www\internation_edu_admin\Public\assets\pages\styles" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" myUseAcceleration="nothing" cleanupOnStartRun="true">
+    <configuration useDefault="false">C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="true" />
+    <option name="FORCE_UPDATE" value="true" />
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="F:\wamp\www\svn\SIS.JXNU" />
+          <option name="myCopyRoot" value="F:\wamp\www\svn\SIS.JXNU" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="F:\wamp\www\svn\SIS.JXNU\.idea" />
+          <option name="myCopyRoot" value="F:\wamp\www\svn\SIS.JXNU\.idea" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="F:\wamp\www\svn\SIS.JXNU" />
+          <option name="myCopyRoot" value="F:\wamp\www\svn\SIS.JXNU" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bd9c5cd1-100b-4b21-a52a-94726c93e1d6" name="Default" comment="" />
+      <created>1436921689953</created>
+      <option name="number" value="Default" />
+      <updated>1436921689953</updated>
+    </task>
+    <task id="LOCAL-00106" summary="Sameen">
+      <created>1438574896105</created>
+      <option name="number" value="00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1438574896105</updated>
+    </task>
+    <task id="LOCAL-00107" summary="Sameen">
+      <created>1438574932106</created>
+      <option name="number" value="00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1438574932106</updated>
+    </task>
+    <task id="LOCAL-00108" summary="Sameen">
+      <created>1438575194107</created>
+      <option name="number" value="00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1438575194107</updated>
+    </task>
+    <task id="LOCAL-00109" summary="Sameen">
+      <created>1438575477110</created>
+      <option name="number" value="00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1438575477110</updated>
+    </task>
+    <task id="LOCAL-00110" summary="Sameen">
+      <created>1438586187104</created>
+      <option name="number" value="00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1438586187104</updated>
+    </task>
+    <task id="LOCAL-00111" summary="Sameen">
+      <created>1438586343108</created>
+      <option name="number" value="00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1438586343108</updated>
+    </task>
+    <task id="LOCAL-00112" summary="Sameen">
+      <created>1438586592105</created>
+      <option name="number" value="00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1438586592105</updated>
+    </task>
+    <task id="LOCAL-00113" summary="Sameen">
+      <created>1438587296105</created>
+      <option name="number" value="00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1438587296105</updated>
+    </task>
+    <task id="LOCAL-00114" summary="Sameen">
+      <created>1438587498105</created>
+      <option name="number" value="00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1438587498105</updated>
+    </task>
+    <task id="LOCAL-00115" summary="Sameen">
+      <created>1438591509119</created>
+      <option name="number" value="00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1438591509119</updated>
+    </task>
+    <task id="LOCAL-00116" summary="Sameen">
+      <created>1438603773131</created>
+      <option name="number" value="00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1438603773131</updated>
+    </task>
+    <task id="LOCAL-00117" summary="Sameen">
+      <created>1438604356105</created>
+      <option name="number" value="00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1438604356105</updated>
+    </task>
+    <task id="LOCAL-00118" summary="Sameen">
+      <created>1438604761108</created>
+      <option name="number" value="00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1438604761108</updated>
+    </task>
+    <task id="LOCAL-00119" summary="Sameen">
+      <created>1438604923109</created>
+      <option name="number" value="00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1438604923109</updated>
+    </task>
+    <task id="LOCAL-00120" summary="Sameen">
+      <created>1438605037106</created>
+      <option name="number" value="00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1438605037106</updated>
+    </task>
+    <task id="LOCAL-00121" summary="Sameen">
+      <created>1438605581107</created>
+      <option name="number" value="00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1438605581107</updated>
+    </task>
+    <task id="LOCAL-00122" summary="Sameen">
+      <created>1438605660181</created>
+      <option name="number" value="00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1438605660181</updated>
+    </task>
+    <task id="LOCAL-00123" summary="Sameen">
+      <created>1438606842116</created>
+      <option name="number" value="00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1438606842121</updated>
+    </task>
+    <task id="LOCAL-00124" summary="Sameen">
+      <created>1438607951106</created>
+      <option name="number" value="00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1438607951106</updated>
+    </task>
+    <task id="LOCAL-00125" summary="Sameen">
+      <created>1438608655105</created>
+      <option name="number" value="00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1438608655105</updated>
+    </task>
+    <task id="LOCAL-00126" summary="Sameen">
+      <created>1438608786109</created>
+      <option name="number" value="00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1438608786109</updated>
+    </task>
+    <task id="LOCAL-00127" summary="Sameen">
+      <created>1438608969106</created>
+      <option name="number" value="00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1438608969106</updated>
+    </task>
+    <task id="LOCAL-00128" summary="Sameen">
+      <created>1438610561107</created>
+      <option name="number" value="00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1438610561107</updated>
+    </task>
+    <task id="LOCAL-00129" summary="Sameen">
+      <created>1438610606111</created>
+      <option name="number" value="00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1438610606111</updated>
+    </task>
+    <task id="LOCAL-00130" summary="Sameen">
+      <created>1438610698106</created>
+      <option name="number" value="00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1438610698106</updated>
+    </task>
+    <task id="LOCAL-00131" summary="Sameen">
+      <created>1438610823106</created>
+      <option name="number" value="00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1438610823106</updated>
+    </task>
+    <task id="LOCAL-00132" summary="Sameen">
+      <created>1438611685108</created>
+      <option name="number" value="00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1438611685108</updated>
+    </task>
+    <task id="LOCAL-00133" summary="Sameen">
+      <created>1438611776108</created>
+      <option name="number" value="00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1438611776108</updated>
+    </task>
+    <task id="LOCAL-00134" summary="Sameen">
+      <created>1438612036106</created>
+      <option name="number" value="00134" />
+      <option name="project" value="LOCAL" />
+      <updated>1438612036106</updated>
+    </task>
+    <task id="LOCAL-00135" summary="Sameen">
+      <created>1438612078106</created>
+      <option name="number" value="00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1438612078106</updated>
+    </task>
+    <task id="LOCAL-00136" summary="Sameen">
+      <created>1438612186114</created>
+      <option name="number" value="00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1438612186114</updated>
+    </task>
+    <task id="LOCAL-00137" summary="Sameen">
+      <created>1438612296105</created>
+      <option name="number" value="00137" />
+      <option name="project" value="LOCAL" />
+      <updated>1438612296105</updated>
+    </task>
+    <task id="LOCAL-00138" summary="Sameen">
+      <created>1438617602107</created>
+      <option name="number" value="00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1438617602107</updated>
+    </task>
+    <task id="LOCAL-00139" summary="Sameen">
+      <created>1438619230105</created>
+      <option name="number" value="00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1438619230105</updated>
+    </task>
+    <task id="LOCAL-00140" summary="Sameen">
+      <created>1438648941151</created>
+      <option name="number" value="00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1438648941171</updated>
+    </task>
+    <task id="LOCAL-00141" summary="Sameen">
+      <created>1438650342105</created>
+      <option name="number" value="00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1438650342105</updated>
+    </task>
+    <task id="LOCAL-00142" summary="Sameen">
+      <created>1438650484105</created>
+      <option name="number" value="00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1438650484105</updated>
+    </task>
+    <task id="LOCAL-00143" summary="Sameen">
+      <created>1438650598105</created>
+      <option name="number" value="00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1438650598105</updated>
+    </task>
+    <task id="LOCAL-00144" summary="Sameen">
+      <created>1438650707104</created>
+      <option name="number" value="00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1438650707105</updated>
+    </task>
+    <task id="LOCAL-00145" summary="Sameen">
+      <created>1438653920105</created>
+      <option name="number" value="00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1438653920105</updated>
+    </task>
+    <task id="LOCAL-00146" summary="Sameen">
+      <created>1438654638168</created>
+      <option name="number" value="00146" />
+      <option name="project" value="LOCAL" />
+      <updated>1438654638169</updated>
+    </task>
+    <task id="LOCAL-00147" summary="Sameen">
+      <created>1438654879105</created>
+      <option name="number" value="00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1438654879105</updated>
+    </task>
+    <task id="LOCAL-00148" summary="Sameen">
+      <created>1438655257105</created>
+      <option name="number" value="00148" />
+      <option name="project" value="LOCAL" />
+      <updated>1438655257105</updated>
+    </task>
+    <task id="LOCAL-00149" summary="Sameen">
+      <created>1438655296105</created>
+      <option name="number" value="00149" />
+      <option name="project" value="LOCAL" />
+      <updated>1438655296105</updated>
+    </task>
+    <task id="LOCAL-00150" summary="Sameen">
+      <created>1438657486105</created>
+      <option name="number" value="00150" />
+      <option name="project" value="LOCAL" />
+      <updated>1438657486105</updated>
+    </task>
+    <task id="LOCAL-00151" summary="Sameen">
+      <created>1438657576105</created>
+      <option name="number" value="00151" />
+      <option name="project" value="LOCAL" />
+      <updated>1438657576105</updated>
+    </task>
+    <task id="LOCAL-00152" summary="Sameen">
+      <created>1438658371107</created>
+      <option name="number" value="00152" />
+      <option name="project" value="LOCAL" />
+      <updated>1438658371108</updated>
+    </task>
+    <task id="LOCAL-00153" summary="Sameen">
+      <created>1438661815104</created>
+      <option name="number" value="00153" />
+      <option name="project" value="LOCAL" />
+      <updated>1438661815105</updated>
+    </task>
+    <task id="LOCAL-00154" summary="Sameen">
+      <created>1438669704106</created>
+      <option name="number" value="00154" />
+      <option name="project" value="LOCAL" />
+      <updated>1438669704106</updated>
+    </task>
+    <option name="localTasksCounter" value="155" />
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32957748" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26510417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2215256" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14942528" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_NEW_TODO" value="false" />
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="false" />
+    <MESSAGE value="最新的" />
+    <MESSAGE value="添加了数据导入，导出的excel模块，添加了备份数据库的配置&#10;update - 谢志强 2015-7-24" />
+    <MESSAGE value="update - 谢志强 2015-7-26" />
+    <MESSAGE value="update - 谢志强 2015-7-27" />
+    <MESSAGE value="update -向恢进-2015-7-27" />
+    <MESSAGE value="update -向恢进-2015-7-28" />
+    <MESSAGE value="sjh" />
+    <MESSAGE value="update -xzq-2015-7-28" />
+    <MESSAGE value="update -xhj-8-2" />
+    <MESSAGE value="Sameen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sameen" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Public/assets/global/styles/ie8-fix.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0215589" vertical-offset="0" max-vertical-offset="748">
+          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Common/View/HyFrame/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.398524" vertical-offset="3186" max-vertical-offset="4378">
+          <caret line="135" column="27" selection-start-line="135" selection-start-column="27" selection-end-line="135" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/Article/category.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.064516" vertical-offset="528" max-vertical-offset="2090">
+          <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/assets/global/scripts/public.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.51077944" vertical-offset="0" max-vertical-offset="2750">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/assets/pages/styles/login_home.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.3" vertical-offset="3039" max-vertical-offset="3652">
+          <caret line="144" column="13" selection-start-line="144" selection-start-column="13" selection-end-line="144" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Common/Conf/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.064516" vertical-offset="132" max-vertical-offset="2684">
+          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/BasisInfo/Model/CourseModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.354838" vertical-offset="858" max-vertical-offset="2794">
+          <caret line="55" column="12" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Common/Model/HyAllModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3482143" vertical-offset="52" max-vertical-offset="26774">
+          <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/UserController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.645162" vertical-offset="0" max-vertical-offset="1408">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/User/login1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24886878" vertical-offset="0" max-vertical-offset="1408">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/User/pwd.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5972851" vertical-offset="330" max-vertical-offset="1870">
+          <caret line="39" column="188" selection-start-line="39" selection-start-column="188" selection-end-line="39" selection-end-column="188" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/assets/pages/styles/login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.85300666" vertical-offset="2468" max-vertical-offset="3388">
+          <caret line="147" column="0" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/User/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17420815" vertical-offset="0" max-vertical-offset="1980">
+          <caret line="7" column="46" selection-start-line="0" selection-start-column="0" selection-end-line="84" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/Index/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.5245903" vertical-offset="1474" max-vertical-offset="3168">
+          <caret line="74" column="33" selection-start-line="74" selection-start-column="33" selection-end-line="74" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/Public/frameset.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.5081968" vertical-offset="1436" max-vertical-offset="4180">
+          <caret line="75" column="48" selection-start-line="75" selection-start-column="48" selection-end-line="75" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/assets/pages/scripts/index_home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="172" max-vertical-offset="1100">
+          <caret line="30" column="32" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/assets/pages/styles/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2830" max-vertical-offset="6292">
+          <caret line="139" column="16" selection-start-line="139" selection-start-column="16" selection-end-line="139" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/International/Controller/EmptyController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="716">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/assets/global/scripts/hy-import.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="1496">
+          <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/assets/global/scripts/hyframe.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2614" max-vertical-offset="14256">
+          <caret line="108" column="51" selection-start-line="108" selection-start-column="51" selection-end-line="108" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/assets/global/styles/public.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4414" max-vertical-offset="9504">
+          <caret line="216" column="111" selection-start-line="216" selection-start-column="17" selection-end-line="216" selection-end-column="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/International/View/InternationalPrint/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.451612" vertical-offset="528" max-vertical-offset="2882">
+          <caret line="50" column="111" selection-start-line="50" selection-start-column="111" selection-end-line="50" selection-end-column="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/BaseController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.903226" vertical-offset="0" max-vertical-offset="902">
+          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/Article/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.677419" vertical-offset="0" max-vertical-offset="1386">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/ArticleController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.612904" vertical-offset="0" max-vertical-offset="880">
+          <caret line="22" column="31" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/assets/global/scripts/jquery.hyall.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="10248" max-vertical-offset="14630">
+          <caret line="476" column="96" selection-start-line="476" selection-start-column="92" selection-end-line="476" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/GoodCourse/Model/CourseViewModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1520" max-vertical-offset="3740">
+          <caret line="79" column="49" selection-start-line="79" selection-start-column="47" selection-end-line="79" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/International/Model/InternationalPrintModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-22.838709" vertical-offset="1514" max-vertical-offset="2398">
+          <caret line="101" column="14" selection-start-line="101" selection-start-column="14" selection-end-line="101" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/GoodCourse/Model/GoodCourseModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="9900">
+          <caret line="65" column="16" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/GoodCourse/Model/GoodCoursePModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="384" max-vertical-offset="1056">
+          <caret line="37" column="29" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/International/Model/InternationalModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3146" max-vertical-offset="5566">
+          <caret line="166" column="22" selection-start-line="166" selection-start-column="22" selection-end-line="166" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/International/Model/InternationalSModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="352" max-vertical-offset="3432">
+          <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/BasisInfo/Model/LanguageModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="792" max-vertical-offset="2552">
+          <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Website/Model/CarouselModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="660" max-vertical-offset="3674">
+          <caret line="65" column="32" selection-start-line="65" selection-start-column="32" selection-end-line="65" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Website/Model/FriendLinkModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="726" max-vertical-offset="4466">
+          <caret line="72" column="46" selection-start-line="72" selection-start-column="46" selection-end-line="72" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Category/Model/DetailsModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3586" max-vertical-offset="6534">
+          <caret line="179" column="2" selection-start-line="179" selection-start-column="2" selection-end-line="179" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Category/Model/CategoryModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="836" max-vertical-offset="6160">
+          <caret line="53" column="27" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Model/DetailsModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2310" max-vertical-offset="3388">
+          <caret line="83" column="16" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/BasisInfo/Model/ClassTModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="928">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/BasisInfo/Model/ClassModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.5641026" vertical-offset="990" max-vertical-offset="3674">
+          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Model/CategoryModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="682" max-vertical-offset="902">
+          <caret line="31" column="117" selection-start-line="31" selection-start-column="117" selection-end-line="31" selection-end-column="117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/BasisInfo/Model/StudentTModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="928">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/BasisInfo/Model/StudentModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1782" max-vertical-offset="7150">
+          <caret line="99" column="19" selection-start-line="99" selection-start-column="19" selection-end-line="99" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="269" max-vertical-offset="1166">
+          <caret line="33" column="50" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Conf/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.073578596" vertical-offset="0" max-vertical-offset="897">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/QuestionController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3080">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/QuestionCategory/Model/QuestionsTeacherModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7722">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/QuestionCategory/Model/QuestionsModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="4928">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/QuestionCategory/Model/QuestionsGoodModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="66" max-vertical-offset="1452">
+          <caret line="41" column="28" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/QuestionCategory/Model/QuestionCategoryModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1386" max-vertical-offset="5478">
+          <caret line="60" column="48" selection-start-line="60" selection-start-column="48" selection-end-line="60" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/QuestionCategory/Model/QuestionsAnswerModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.4960981" vertical-offset="4053" max-vertical-offset="6270">
+          <caret line="164" column="0" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

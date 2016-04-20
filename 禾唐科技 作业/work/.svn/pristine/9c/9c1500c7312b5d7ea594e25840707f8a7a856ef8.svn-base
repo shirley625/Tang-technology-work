@@ -1,0 +1,55 @@
+<extend name="Public:frameset"/>
+<block name="page-body">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/assets/home/pages/css/article.css" />
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="side-nav">
+                <ul>
+                    <li>
+                        <a href="javascript:;">
+                            <i class=" glyphicon glyphicon-list-alt"></i> <span class="nav-text">招生简介</span>
+                        </a>
+                        <span class="after"></span>
+                    </li>
+                    <li class="active">
+                        <a href="javascript:;">
+                            <i class=" glyphicon glyphicon-list-alt"></i> <span class="nav-text">招生简介</span>
+                        </a>
+                        <span class="after"></span>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <i class=" glyphicon glyphicon-list-alt"></i> <span class="nav-text">招生简介</span>
+                        </a>
+                        <span class="after"></span>
+                    </li>
+                </ul>
+            </div>
+			</div>
+			<div class="col-md-8">
+				<div class="headline">
+					<h3>招生简介</h3>
+					<span class="triangle-lg glyphicon glyphicon-triangle-right"></span>
+					<ol class="my-breadcrumb pull-right">
+					   <li><a href="#">首页</a></li>
+					  <li><a href="#">学院概述</a></li>
+					  <li class="active">招生简介</li>
+					</ol>
+				</div>
+				<br>
+				<hr>
+				<article>
+					<div class="article-title text-center">国际教育学院举行日语语言文学专业研究生开题报告会</div>
+					<div class="article-info pull-right">
+						发布者：<span>刘杰</span>&nbsp;&nbsp;发布时间：<span>2015/05/31</span>&nbsp;&nbsp;阅读：<span>234</span>次
+					</div>
+					<div class="article-content">
+						<p>国际教育学院赴九江学院开展研究生招生宣传工作为落实2016年学校研究生招生宣传工作会议精神，2015年6月9日，国际教育学院副院长王亚闽与学院日语系主任丁勇老师，赴九江学院进行日语硕士研究生招生宣传工作。九江学院外国语学院部分学生参加了此次招生宣传会，九江学院外国语学院领导参加了会议。
+    国教学院领导介绍了江西师范大学办学情况，并向与会的同学们重点介绍了江西师范大学学位与研究生教育概况、学科实力、师资力量、培养特色、奖助体系、就业前景等基本情况，热忱欢迎九江学院的学生报考江西师范大学。丁勇老师分别用中文和日语详细解读了江西师范大学2016年研究生招生相关政策与报考流程，向与会的同学们介绍了江西师范大学国际教育学院师资队伍建设、学科建设、科学研究、研究生培养等方面的情况，并对现场同学们的提问作了详细的解答。</p>
+    </div>
+				</article>
+			</div>
+		</div>
+	</div>
+</block>

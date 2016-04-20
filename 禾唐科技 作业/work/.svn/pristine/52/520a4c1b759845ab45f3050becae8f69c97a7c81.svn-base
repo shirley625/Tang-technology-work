@@ -1,0 +1,140 @@
+<extend name="Public:frameset"/>
+<block name="page-body">
+    <div class="container">
+        <div class="row">
+            <div class="page-body-left col-md-3">
+                <div class="side-nav">
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <i class=" glyphicon glyphicon-list-alt"></i> <span class="nav-text">招生简介</span>
+                            </a>
+                            <span class="after"></span>
+                        </li>
+                        <li class="active">
+                            <a href="javascript:;">
+                                <i class=" glyphicon glyphicon-list-alt"></i> <span class="nav-text">招生简介</span>
+                            </a>
+                            <span class="after"></span>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <i class=" glyphicon glyphicon-list-alt"></i> <span class="nav-text">招生简介</span>
+                            </a>
+                            <span class="after"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-body-right col-md-8">
+                <div class="row">
+                    <div class="form-body">
+                        <div class="panel-group"  id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="ques-list-title panel-heading" role="tab" id="heading2">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                                            <div class="row">
+                                                <div class="col-md-10 col-xs-12">
+                                                    1308093051&nbsp;:&nbsp;在哪吃饭呀士大夫撒旦发射点犯得上范德萨范德萨分...
+                                                </div>
+                                                <div class="col-md-2 col-xs-12 pull-right" style="text-align:right;">
+                                                    2015-7-12
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse2" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading2">
+                                    <div class="ques-list-content panel-body">
+                                        <ul class="list-group detail-list">
+                                            <div class="row">
+										  		<span>
+										  			1在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda
+										  			1在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda
+										  		</span>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                    <div class="ques-list-footer panel-footer">
+                                        <div class="row">
+                                            <span>生活</span><span>学习</span><span>旅游</span>
+                                            <!-- <div class="text col-md-2 col-xs-6">&nbsp;生活</div>
+                                            <div class="text col-md-2 col-xs-6">&nbsp;学习</div>
+                                            <div class="text col-md-2 col-xs-6">&nbsp;旅游</div>
+                                             -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="ques-list-title panel-heading" role="tab" id="heading3">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-controls="collapse3">
+                                            <div class=" row">
+                                                <div class="col-md-10 col-xs-12">
+                                                    1308093051&nbsp;:&nbsp;在哪吃饭呀士大夫撒旦发射点犯得上范德萨范德萨分...
+                                                </div>
+                                                <div class="col-md-2 col-xs-12" style="text-align:right;">
+                                                    2015-7-12
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse3" class="panel-collapse collapse" role="tabpane3" aria-labelledby="heading3">
+                                    <div class="ques-list-content panel-body">
+                                        <ul class="list-group detail-list">
+                                            <div class="row">
+									  		<span>
+									  			1在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda
+									  		</span>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                    <div class="ques-list-footer panel-footer">
+                                        <div class="row">
+                                            <span>生活</span><span>学习</span><span>旅游</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="ques-list-title panel-heading" role="tab" id="heading1">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-controls="collapse1">
+                                            <div class="row">
+                                                <div class="col-md-10 col-xs-12">
+                                                    1308093051&nbsp;:&nbsp;在哪吃饭呀士大夫撒旦发射点犯得上范德萨范德萨分...
+                                                </div>
+                                                <div class="col-md-2 col-xs-12" style="text-align:right;">
+                                                    2015-7-12
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse1" class="panel-collapse collapse" role="tabpane1" aria-labelledby="heading1">
+                                    <div class="ques-list-content panel-body">
+                                        <ul class="list-group detail-list">
+                                            <div class="row">
+									  		<span>
+									  			1在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda在五食堂sfasfsdfsadfsda
+									  		</span>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                    <div class="ques-list-footer panel-footer">
+                                        <div class="row">
+                                            <span>生活</span><span>学习</span><span>旅游</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</block>

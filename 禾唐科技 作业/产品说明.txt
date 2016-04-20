@@ -1,0 +1,5 @@
+本系统是采用thinkphp语言编写的。
+需要搭建环境（WanpServer服务器等）才能运行，查看。
+搭建完后，需要访问的地址是 http://localhost/work/index.php/System/HyStart/login.html
+
+作者：前端开发应聘者 施佳航

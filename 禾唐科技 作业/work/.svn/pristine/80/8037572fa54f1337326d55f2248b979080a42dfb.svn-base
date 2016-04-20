@@ -1,0 +1,85 @@
+<extend name="Public:frameset"/>
+<block name="page-body">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/assets/home/pages/css/article.css" />
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+                <ul class="side-nav">
+                    <li>
+                        <a href="javascript:;">
+                        <span class="side-nav-icon"><i class=" glyphicon glyphicon-list-alt"></i>
+                        </span>
+                        <span class="side-nav-text">招生简介</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                        <span class="side-nav-icon"><i class="glyphicon glyphicon-list-alt"></i>
+                        </span>
+                        <span class="side-nav-text">学院简介</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="javascript:;">
+                        <span class="side-nav-icon"><i class="glyphicon glyphicon-list-alt"></i>
+                        </span>
+                        <span class="side-nav-text">学院简介</span>
+                        </a>
+                    </li>
+                </ul>
+			</div>
+			<div class="col-md-8">
+				<div class="headline">
+					<h3>招生简介</h3>
+					<span class="triangle-lg glyphicon glyphicon-triangle-right"></span>
+					<ol class="my-breadcrumb pull-right">
+					   <li><a href="#">首页</a></li>
+					  <li><a href="#">学院概述</a></li>
+					  <li class="active">招生简介</li>
+					</ol>
+				</div>
+				
+				<br/>
+				<hr/>
+				<div class="article-list">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-1">
+						<a href="">国际教育学院举行日语语言文学专业研究生开题报告</a>
+						</div>
+						<div class="col-md-3">2015年5月31日</div>
+					</div>
+				</div>
+				<hr/>
+				<div class="article-list">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-1">
+						<a href="">国际教育学院举行日语语言文学专业研究生开题报告</a>
+						</div>
+						<div class="col-md-3">2015年5月31日</div>
+					</div>
+				</div>
+				<hr/>
+				<div class="article-list">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-1">
+						<a href="">国际教育学院举行日语语言文学专业研究生开题报告</a>
+						</div>
+						<div class="col-md-3">2015年5月31日</div>
+					</div>
+				</div>
+				<hr/>
+				<div class="article-list">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-1">
+						<a href="">国际教育学院举行日语语言文学专业研究生开题报告</a>
+						</div>
+						<div class="col-md-3">2015年5月31日</div>
+					</div>
+				</div>
+				<hr/>
+			</div>
+		</div>
+	</div>
+	
+	
+</block>

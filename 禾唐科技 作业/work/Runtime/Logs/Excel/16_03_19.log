@@ -1,0 +1,48 @@
+[ 2016-03-19T20:39:20+08:00 ] ::1 /sis/index.php/Excel/Excel/excel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000915s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001128s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001453s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001670s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001980s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) G:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: Excel/Excel/all G:\wamp\www\sis\Application\Common\Model\HyAuthModel.class.php 第 91 行.
+NOTIC: [8] Undefined index: model G:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `edu_user` [ RunTime:0.0076s ]
+INFO: [ hy_log ] --START--
+NOTIC: [8] Undefined variable: sql G:\wamp\www\sis\Application\Common\Behavior\HyLogBehavior.class.php 第 31 行.
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.000381s ]
+INFO: [ hy_log ] --END-- [ RunTime:0.000757s ]
+INFO: [ before_view ] --START--
+SQL: SHOW COLUMNS FROM `edu_frame_alert` [ RunTime:0.0081s ]
+SQL: SELECT `id`,`category`,`icon`,`message`,`url`,`type`,`create_time` FROM `edu_frame_alert` where `to_users` LIKE '%,18,%' AND ( IFNULL(`read_users`,'')='' OR `read_users` NOT LIKE '%,18,%') AND `status`=1 ORDER BY `id` DESC [ RunTime:0.0016s ]
+INFO: Run Common\Behavior\HyBeforeViewBehavior [ RunTime:0.016444s ]
+INFO: [ before_view ] --END-- [ RunTime:0.016774s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000581s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000904s ]
+NOTIC: [8] Undefined variable: hyMenu G:\wamp\www\sis\Runtime\Cache\Excel\d2814c4988b17a59d48be3bcf38216f3.php 第 307 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.085659s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085980s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000835s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001151s ]
+INFO: [ action_end ] --START--
+SQL: SHOW COLUMNS FROM `edu_frame_log` [ RunTime:0.0096s ]
+SQL: INSERT INTO `edu_frame_log` (`user_id`,`description`,`sql`,`module`,`controller`,`action`,`post`,`url`,`create_time`,`ip`) VALUES ('18',' >> 信息','','Excel','Excel','excel','{\"HyFrame_SSID\":\"4i43dd3bq0esuntg8komot2im2\"}','/sis/index.php/Excel/Excel/excel.html','1458391160','0.0.0.0') [ RunTime:0.0008s ]
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.014027s ]
+INFO: [ action_end ] --END-- [ RunTime:0.014458s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001412s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001798s ]
+
+[ 2016-03-19T20:39:20+08:00 ] ::1 /sis/index.php/Excel/Excel/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000872s ]
+

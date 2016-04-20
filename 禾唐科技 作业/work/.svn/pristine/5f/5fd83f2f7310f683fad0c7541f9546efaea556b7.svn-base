@@ -1,0 +1,139 @@
+<style type="text/css">
+.describe{
+    font-size: 15px;
+    font-weight: 800;
+    font-family: "Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu, Arial, Helvetica, sans-serif;
+}
+.info{
+    font-size: 15px;
+    font-family: "Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu, Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+}
+.info b{
+    display: inline-block;
+    width: 200px;
+}
+.info span{
+    display: inline-block;
+    text-align: left;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu, Arial, Helvetica, sans-serif;
+}
+.print-title{
+    font-size: 20px;
+    font-family: "Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu, Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding-top: 30px;
+}
+.cn{
+    display: inline-block;
+    margin-left: 20px;
+	padding-top: 10px;
+}
+.en{
+    display: inline-block;
+    margin-right: 20px!important;
+	padding-top: 10px;
+}
+.print-time{
+    width: 100%;
+    background-color: #f9f9f9;
+    font-size: 14px;
+    font-weight: 800;
+    font-family: "Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu, Arial, Helvetica, sans-serif;
+}
+.grading{
+    background-color: #f9f9f9;
+    font-size: 14px;
+    font-weight: 800;
+    margin-left: 20px;
+    font-family: "Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu, Arial, Helvetica, sans-serif;
+}
+
+</style>
+<button type="button"  class="btn blue pull-right" onclick="preview(1)">打印成绩单</button>
+<!--<a class="btn btn-default btn-circle btn-sm hidden-xs DTTT_button_print"style="float: right"; -->
+<!--id="ToolTables_DataTables_Table_0_1" title="View print view" tabindex="0"-->
+<!--aria-controls="DataTables_Table_0"><span><i class="fa fa-print fa-fw"></i>打印</span></a>-->
+<!--startprint1-->
+<br>
+<div class="img">
+    <img src="__PUBLIC__/assets/global/img/LOGO1.png">
+</div>
+
+<div class="panel panel-default">
+    <div class="print-time"><div class="cn pull-left">Number of Issue: {$data[0]['cn_time']}</div></div>
+	<br/><br/>
+    <div class="print-title text-center">TRANSCRIPT OF ACADEMIC RECORDS</div>
+    <!-- Default panel contents -->
+    <div class="panel-heading name">
+        <div class="describe"><p>To whom it may concern:</p></div>
+        <div class="describe"><p>Personal Data: </p></div>
+        <div class="info"><b>Name In Full</b><span>：{$data[0]['user_name']}（{$data[0]['english_name']}）</span></div>
+        <div class="info"><b>Nationality</b><span>：{$data[0]['country']}</span></div>
+        <div class="info"><b>Name Date of Birth</b><span>：{$data[0]['birth']}</span></div>
+        <div class="info"><b>Date of Admission</b><span>：{$data[0]['admission_time']}</span></div>
+        <div class="info"><b>College</b><span>：School of Intercultural Studies</span></div>
+        <div class="info"><b>Major</b><span>：{$data[0]['class_name']}</span></div>
+        <div class="grading"><b>Grading System:</b> <br/>
+           <p>A: very good (90-100) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B: good (80-89) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C: mediocre (70-79) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D: passing (60-69)</p>
+        </div>
+    </div>
+    <!-- Table -->
+    <table class="table">
+        <tr>
+            <th>Year</th>
+            <th>Semester</th>
+            <th>Subject</th>
+            <th>Credit</th>
+            <th>Score</th>
+        </tr>
+        <empty name="data">
+            <tr>
+                <td>暂无成绩</td>
+            </tr>
+        <else/>
+            <volist name="data" id="v" >
+                <tr>
+                    <td>{$v.year}</td>
+                    <td>{$v.term}</td>
+                    <td style="width: 60%;">{$v.course_name}</td>
+                    <td>{$v.credit}</td>
+                    <td>{$v.score}</td>
+                </tr>
+            </volist>
+        </empty>
+
+    </table>
+</div>
+<div class="describe"><p>Issued By: Dean of School of Intercultural Studies,Jiangxi Normal University</p></div>
+
+<!--endprint1-->
+<script type="text/javascript">
+    $("#close").hide();
+    function preview(oper)
+    {
+        if (oper < 10)
+        {
+            bdhtml=window.document.body.innerHTML;//获取当前页的html代码
+            sprnstr="<!--startprint"+oper+"-->";//设置打印开始区域
+            eprnstr="<!--endprint"+oper+"-->";//设置打印结束区域
+            prnhtml=bdhtml.substring(bdhtml.indexOf(sprnstr)+18); //从开始代码向后取html
+
+            prnhtml=prnhtml.substring(0,prnhtml.indexOf(eprnstr));//从结束代码向前取html
+            window.document.body.innerHTML=prnhtml;
+            window.print();
+            window.document.body.innerHTML=bdhtml;
+        }
+        else
+        {
+            window.print();
+        }
+    }
+
+</script>
+
+<button type="button"  class="btn blue pull-right" onclick="location.reload();">关闭</button>

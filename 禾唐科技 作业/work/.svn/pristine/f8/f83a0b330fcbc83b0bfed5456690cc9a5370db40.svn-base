@@ -1,0 +1,294 @@
+<?php
+namespace International\Model;
+use Common\Model\HyAllModel;
+use System\Model\HomkaiServiceModel;
+
+/**
+ * 留学生管理模型管理员角色
+ *
+ * @author
+ */
+class InternationalModel extends HyAllModel {
+
+    /**
+     * @overrides
+     */
+    protected function initTableName(){
+        return 'score';
+    }
+
+    /**
+     * @overrides
+     */
+    protected function initInfoOptions() {
+        return array (
+            'title' => '留学生成绩',
+            'subtitle' => '管理留学生的课程与成绩'
+        );
+    }
+    /**
+     * @overrides
+     */
+    protected function initSqlOptions() {
+
+        return array (
+            'associate' => array (
+                'user|stu_id|id|name AS student_name,id AS user_id,user_no||left',
+                'student|user.id|user_id|class_id||left',
+                'class|student.class_id|id|name AS class_name||left',
+                'exam_course|course_id|id|name AS course_name||left'
+            ),
+            'where' => array (
+                'status' => array('eq',1),
+                'user.country' => array('neq','中国')
+            )
+        );
+    }
+    /**
+     * @overrides
+     */
+    protected function initPageOptions() {
+        return array (
+            'checkbox'	=> true,
+            //  'deleteType'=> 'status|9',
+            'actions' 	=> array (
+                'edit' => array (
+                    'title' => '编辑',
+                    'max' => 1
+                ),
+                'delete' => array (
+                    'title' => '删除',
+                    // 是否需要确认
+                    'confirm' => true
+                )
+            ),
+            'buttons'	=> array(
+                'add'=>array(
+                    'title'=>'成绩录入',
+                    'icon'=>'fa-plus'
+                )
+            ),
+            'initJS'=>'InteQwf'
+        );
+    }
+    /**
+     * @overrides
+     */
+    protected function initFieldsOptions() {
+        return array (
+            'class_id' =>array(
+                'title' => '班级名称',
+                'list' => array(
+                    'callback'=>array('value','{:class_name}'),
+                    'search' => array (
+                        'type' => 'select',
+                        'select' =>array(
+                            'optgroup' => true
+                        ),
+                        'query'=>'eq',
+                        'sql'=>"class.id = {:class_id}"
+                    ),
+                ),
+                'form' => array (
+                    'callback' => array('get_class_name','{:stu_id}','{#}'),
+                    'type' => 'select',
+                    'select' =>array(
+                        'optgroup' => true
+                    ),
+                    'validate' => array (
+                        'required' => true
+                    )
+                )
+            ),
+            'student_name'=>array(
+                'title' => '学生姓名',
+                'list' => array(
+                    'search' => array (
+                        'title'=>'学生姓名',
+                        'type'=>'text',
+                        'query'=>'like',
+                        'sql'=>"user.name like '%{:student_name}%'"
+                    )
+                )
+            ),
+            'stu_id' => array (
+                'title' => '学生姓名',
+                'list'=>array(
+                    'hidden'=>true
+                ),
+                'form' => array (
+                    'type' => 'select',
+                    'validate' => array (
+                        'required' => true
+                    ),
+                    'tip' => '请先选择班级'
+                )
+            ),
+            'user_no' =>array(
+                'title' => '学号',
+                'list'=>array(
+                ),
+
+            ),
+            'course_name' =>array(
+                'title' => '课程',
+                'list' => array(
+                    'title' => '课程',
+                    'search' => array (
+                        'type'=>'select',
+                        'query'=>'eq',
+                        'sql'=>"exam_course.id = {:course_name}"
+                    )
+                )
+            ),
+            'course_id' => array (
+                'title' => '课程',
+                'list'=>array(
+                    'hidden'=>true
+                ),
+                'form' => array (
+                    'type' => 'select',
+                    'validate' => array (
+                        'required' => true
+                    ),
+                )
+            ),
+
+            'score' => array (
+                'title' => '分数',
+                'list'=>array(
+                ),
+                'form' => array (
+                    'type' => 'text',
+                    'validate' => array (
+                        'required' => true,
+                        'number' => true,
+                        'minlength' => 0 ,
+                        'maxlength' => 3
+                    ),
+                    'tip'=>'输入0-100间的分数',
+                )
+            ),
+
+            'year' => array (
+                'title' => '学年',
+                'list'=>array(
+                ),
+                'form' => array (
+                    'type' => 'text',
+                    'validate' => array (
+                        'required' => true,
+                        'number' => true,
+                    ),
+                    'tip' => '如:2013'
+                )
+            ),
+            'term' => array (
+                'title' => '学期',
+                'list' => array (
+                    'callback'=>array('value','{:term}'),
+                    'search'=>array(
+                        'title'=>'选定学期',
+                        'type'=>'select',
+                    )
+                ),
+                'form' => array (
+                    'type' => 'select',
+                    'validate' => array (
+                        'required' => true,
+                    )
+                )
+            ),
+
+            'status'=>array(
+                'title' => '状态',
+                'list' => array (
+                    'callback' => array('status'),
+                    'width' => '30'
+                ),
+                'form'=>array(
+                    'type'=>'select',
+                )
+            )
+        );
+    }
+
+    protected function getOptions_class_id(){
+
+        return HomkaiServiceModel::getClassOptg();
+    }
+
+    protected function getOptions_stu_id(){
+        $arr = M('user')->where(array(
+            'status'=>1
+        ))->getField('id,name');
+        return $arr;
+    }
+
+    protected function getOptions_course_id(){
+        return M('exam_course')->where(array(
+            'status'=>1
+        ))->getField('id,name');
+    }
+
+    protected function getOptions_course_name(){
+        return M('exam_course')->where(array(
+            'status'=>1
+        ))->getField('id,name');
+    }
+
+    protected function getOptions_term(){
+        return array(
+            '上学期'=>'上学期',
+            '下学期'=>'下学期'
+        );
+    }
+
+    protected function callback_get_class_name($stu_id){
+        return M('student')->where(array(
+            'user_id' => $stu_id
+        ))->getField('class_id');
+    }
+    protected function callback_getClass($stu_id){
+        $class_id = M('student')->where(array(
+            'user_id'=>$stu_id
+        ))->getField('class_id');
+
+        $class_name = M('class')->where(array(
+            'id'=>$class_id
+        ))->getField('name');
+
+        return $class_name;
+    }
+
+    protected function callback_getName($stu_id){
+        return M('user')->where(array(
+            'id' => $stu_id,
+            'status' => 1
+        ))->getField('name');
+    }
+
+    protected function callback_getCourse($course_id){
+        return M('exam_course')->where(array(
+            'id' =>$course_id,
+        ))->getField('name');
+    }
+
+    public function ajax_select_studentViaClass(&$json){
+        $id=I('id');
+        $idArr=M('student')->where(array(
+            'class_id'=>$id,
+            'status'=>1
+        ))->getField('user_id',true);
+        $idStr = implode(',',$idArr);
+        $data=$userIdArr=M('user')->where(array(
+            'id' =>array(IN,$idStr)
+        ))->select();
+        foreach($data as $k=>$v){
+            $data[$k]['name_user_no'] = $v['name']."(".$v['user_no'].")";
+        }
+        if(!$data) return $json;
+        $json['status'] = true;
+        $json['data'] = md_arr_2_asc_arr($data,'id','name_user_no');
+    }
+}

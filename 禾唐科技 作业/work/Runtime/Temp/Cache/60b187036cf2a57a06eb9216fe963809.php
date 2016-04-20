@@ -1,0 +1,3 @@
+<?php
+//000000043200a:2:{s:5:"roles";s:5:"22,10";s:9:"accessArr";a:19:{i:100000;s:0:"";i:1100100;s:0:"";i:610000;s:0:"";i:1100000;s:0:"";i:1100200;s:0:"";i:1000000;s:0:"";i:1000100;s:7:"HyAlert";i:610100;s:8:"StudentT";i:610101;s:8:"StudentT";i:610200;s:8:"TeacherT";i:610201;s:8:"TeacherT";i:610300;s:6:"ClassT";i:610301;s:6:"ClassT";i:610106;s:8:"StudentT";i:610206;s:8:"TeacherT";i:610306;s:6:"ClassT";i:1000101;s:7:"HyAlert";i:1000102;s:7:"HyAlert";i:1000103;s:7:"HyAlert";}}
+?>

@@ -1,0 +1,244 @@
+<?php
+namespace QuestionCategory\Model;
+use Common\Model\HyAllModel;
+
+/**
+ * 文章分类管理模型
+ *
+ * @author 
+ */
+class QuestionCategoryModel extends HyAllModel {
+	protected function initTableName(){
+		return 'question_category';
+	}
+	
+	/**
+	 * @overrides
+	 */
+	protected function initInfoOptions() {
+		return array (
+				'title' => '问题分类',
+				'subtitle' => array(
+						
+				)
+		);
+	}
+	/**
+	 * @overrides
+	 */
+	protected function initSqlOptions() {
+		return array (
+				'associate' => array (
+						'question_category|pid|id|name AS category_name||left',
+						'user|incharge_id|id|name AS user_name||left',
+				),
+				'where' => array (
+						'status'=>array('eq',1),
+				)
+		);
+	}
+	/**
+	 * @overrides
+	 */
+	protected function initPageOptions() {
+		return array (
+				'checkbox'	=> true,
+				'deleteType'=> 'status|9',
+				'okRefresh'	=>	false,
+				'actions' 	=> array (
+						'edit' => array (
+								'title' => '编辑',
+								'max' => 1
+						),
+						'delete' => array (
+								'title' => '删除',
+								// 是否需要确认
+								'confirm' => true
+						)
+				),
+				'buttons'	=> array(
+						'add'=>array(
+								'title'=>'新增问题分类',
+								'icon'=>'fa-plus'
+						)
+				), 
+				'initJS'=>'stopXhj'
+		);
+	}
+	/**
+	 * @overrides
+	 */
+	protected function initFieldsOptions() {
+		return array (
+                'pid' => array (
+                    'title' => '一级分类',
+                    'list'=>array(
+                        'callback'=>array('getseclist')
+                    ),
+                    'form' => array (
+                        'type' => 'select',
+                        'select'=>array(
+                            'addon'=>	true
+                        ),
+
+                        'callback'=>array('get_fir_list','{:id}','{#}'),
+                    )
+                ),
+				'name' => array(
+						'title' => '二级分类',
+						'list' => array(
+								
+						),
+						'form' => array (
+
+								'type'=>'text',
+								'select'=>array(
+								    'addon'=>true
+							    ),
+                                'fill'=>array(
+                                    'edit' => array('fill_name')
+                                ),
+                            'callback' =>array('get_sec_list','{:id}','{#}')
+
+						)
+				),
+
+				'incharge_id' => array (
+						'title' => '负责人',
+						'list'=>array(
+								'callback'=>array('incharge_id'),
+								'search' => array (
+										'title' => '负责人',
+										'type' => 'select'
+								)
+						),
+						'form' => array (
+								'type' => 'select'
+						)
+				),
+				'remark' => array (
+						'title' => '备注',
+						'list'=>array(
+                        //	'hidden' => true
+                        ),
+						'form' => array (
+								'type' => 'textarea',
+								'validate' => array (
+										'maxlength' => 255
+								),
+								'tip'=>'输入255长度名称'
+						)
+				),
+				'rank'=>array(
+						'title' =>'权重',
+						'list'=>array(
+								
+						),
+						'form'=>array(
+								'title'=>'权重',
+								'type'=>'text',
+								'validate'=>array(
+										'required'=>true,
+										'regex'=>'^(\d{1,4})$'
+								)
+						)
+				),
+				'status' => array (
+						'title' => '状态',
+						'list' => array (
+								'width' => '30',
+								'callback' => array('status')
+						),
+						'form' => array (
+								'type' => 'select',
+						)
+				),
+		);
+	}
+
+    protected function callback_fill_name($id){
+        return $this->where(array(
+            'id' => $id
+        ))->getField('name');
+    }
+
+	protected function _after_insert($data, $options){
+		$sec_name = I('name');
+		if($sec_name) return;
+		$pid = I('pid');
+		$data['pid'] = 0 ;
+		$data['name'] = $pid;
+		M('question_category')->where(array(
+				'id'=>$data['id']
+		))->save($data);
+	}
+
+    protected function _after_update($data, $options){
+        $sec_name = I('name');
+        $data['name'] = $sec_name;
+        M('question_category')->where(array(
+            'id'=>$data['id']
+        ))->save($data);
+    }
+
+	protected function getOptions_name(){
+		 return array('0'=>'无');
+	}
+	
+	protected function getOptions_id(){
+		return $this->where(array(
+				'status'=>array('lt',9)
+		))->getField('id,name');
+	}
+	
+	protected function getOptions_pid(){
+
+        return M('question_category')->where(array(
+            'status'=>array('gt',0)
+        ))->getField('id,name');
+	}
+	
+	protected function getOptions_incharge_id(){
+		$teacher_id_arr=M('teacher')->where(array(
+				'status' => 1
+		))->getField('user_id',true);
+		$te_id_str =  implode(',', $teacher_id_arr);
+		$te_id_str=rtrim($te_id_str,',');
+		return M('user')->where(array(
+				'id'=>array(IN,$te_id_str)
+		))->getField('id,name');
+	}
+
+	protected function callback_incharge_id($incharge_id){
+		return M('user')->where(array(
+				'id'=>$incharge_id
+		))->getField('name');
+	}
+
+    protected function callback_get_fir_list($id){
+
+        return $this->where(array(
+            'id' => $id
+        ))->getField('pid');
+
+    }
+
+    protected function callback_get_sec_list($id){
+        return $this->where(array(
+            'id' => $id
+        ))->getField('name');
+    }
+
+	protected function callback_getseclist($pid){
+		$ano_id = $this->where(array(
+				'id'=>$pid
+		))->getField('id');
+		if($ano_id){
+			return $this->where(array(
+					'id'=>$ano_id
+			))->getField('name');
+		}else{
+			return '无';
+		}
+	}
+}

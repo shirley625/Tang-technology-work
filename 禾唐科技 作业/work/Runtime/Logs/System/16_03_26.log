@@ -1,0 +1,1630 @@
+[ 2016-03-26T18:12:00+08:00 ] ::1 /sis/index.php/System/HyStart/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000917s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002695s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.002426s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.002789s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `edu_frame_setting` [ RunTime:0.0278s ]
+SQL: SELECT `key`,`value` FROM `edu_frame_setting` WHERE `status` < 9  [ RunTime:0.0007s ]
+INFO: [ before_view ] --START--
+INFO: Run Common\Behavior\HyBeforeViewBehavior [ RunTime:0.001466s ]
+INFO: [ before_view ] --END-- [ RunTime:0.001756s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000280s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000522s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020880s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021137s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000882s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001103s ]
+INFO: [ action_end ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.000115s ]
+INFO: [ action_end ] --END-- [ RunTime:0.001994s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006437s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006680s ]
+
+[ 2016-03-26T18:12:01+08:00 ] ::1 /sis/index.php/System/HyStart/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000876s ]
+
+[ 2016-03-26T18:12:05+08:00 ] ::1 /sis/index.php/System/HyStart/ajax?q=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003846s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004600s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001764s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001995s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+NOTIC: [8] Undefined variable: logStep E:\wamp\www\sis\Application\System\Controller\HyStartController.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `edu_user` [ RunTime:0.0434s ]
+NOTIC: [2] Missing argument 1 for Common\Model\HyFrameModel::find(), called in E:\wamp\www\sis\Application\Common\Model\HyAccountModel.class.php on line 25 and defined E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 271 行.
+NOTIC: [8] Undefined variable: options E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 272 行.
+NOTIC: [8] Undefined variable: options E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 272 行.
+SQL: SELECT `id`,`name`,`roles`,`user_no`,`password`,`sex`,`birth`,`phone`,`qq`,`email`,`country`,`session_id`,`login_last_time`,`login_times`,`status`,`english_name`,`admission_time` FROM `edu_user` WHERE `user_no` = '123' AND `status` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: UPDATE `edu_user` SET `login_last_time`='1458987125',`login_times`='573',`session_id`='6g93j7nfmafdghiksjna9tadg1' WHERE `id` = 18 [ RunTime:0.0688s ]
+NOTIC: [8] Undefined index: avatar_file E:\wamp\www\sis\Application\System\Controller\HyStartController.class.php 第 100 行.
+NOTIC: [8] Undefined index: college_id E:\wamp\www\sis\Application\Common\Model\HyAccountModel.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `edu_frame_role` [ RunTime:0.0418s ]
+SQL: SELECT `id`,`name`,`title`,`table` FROM `edu_frame_role` WHERE `status` = 1 AND `id` IN ('22','32','31')  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `edu_user` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `edu_frame_access` [ RunTime:0.0054s ]
+SQL: SELECT `action_id`,`model` FROM `edu_frame_access` WHERE ( `role_id`=22 AND `status`=1 )  [ RunTime:0.0010s ]
+SQL: SELECT `pid` FROM `edu_frame_role` WHERE ( `id`=22 AND `status`=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `action_id`,`model` FROM `edu_frame_access` WHERE ( `role_id`=10 AND `status`=1 )  [ RunTime:0.0007s ]
+SQL: SELECT `pid` FROM `edu_frame_role` WHERE ( `id`=10 AND `status`=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`type`,`title`,`name`,`options` FROM `edu_frame_action` WHERE `status`=1 AND `id` IN (100000,510000,510300,510303,510301,510302,310000,310101,310102,310103,310104,310105,310201,310202,310203,310204,310205,310206,1100100,310300,310301,310302,310303,310304,310305,310306,310307,510304,510305,510306,510307,610000,1100000,1100200,510200,510201,510400,510203,310400,310401,310402,310403,310404,310405,310500,310501,310502,1000000,1000100,510401,510402,510403,510404,610100,610101,610200,610201,610300,610301,610106,610206,610306,310406,310506,1000101,1000102,1000103,510308) ORDER BY `rank` DESC [ RunTime:0.0198s ]
+SQL: SELECT `id`,`pid`,`type`,`title`,`name`,`options` FROM `edu_frame_action` WHERE `status`=1 AND `id` IN (100000,510000,510300,510303,510301,510302,310000,310101,310102,310103,310104,310105,310201,310202,310203,310204,310205,310206,1100100,310300,310301,310302,310303,310304,310305,310306,310307,510304,510305,510306,510307,610000,1100000,1100200,510200,510201,510400,510203,310400,310401,310402,310403,310404,310405,310500,310501,310502,1000000,1000100,510401,510402,510403,510404,610100,610101,610200,610201,610300,610301,610106,610206,610306,310406,310506,1000101,1000102,1000103,510308) ORDER BY `rank` DESC [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `edu_frame_log` [ RunTime:0.0238s ]
+SQL: INSERT INTO `edu_frame_log` (`user_id`,`controller`,`action`,`post`,`description`,`ip`,`create_time`) VALUES ('18','HyStart','ajax','{\"u\":\"flAeC3bBUjmu7Cd\\/yox2\\/w==7327195\",\"p\":\"vRD3lSbGCuWilgGtxTG+VfVg8s\\/1l+EjuF\\/MzcR5ZoJtBXmckBf27FM2vjKYOix49643327\"}',' >> 登录验证 >> <span class=\'text-success\'>成功</span>','0.0.0.0','1458987125') [ RunTime:0.0005s ]
+
+[ 2016-03-26T18:12:06+08:00 ] ::1 /sis/index.php/System/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006095s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006402s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001489s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001756s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `edu_frame_log` [ RunTime:0.0060s ]
+SQL: SELECT `create_time` FROM `edu_frame_log` WHERE `user_id` = 18 AND `status` = 1 AND `controller` = 'HyStart' AND `action` = 'ajax' AND `description` LIKE '%成功%' ORDER BY id desc LIMIT 2   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `edu_frame_notice` [ RunTime:0.0056s ]
+NOTIC: [8] Undefined index: associate E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 141 行.
+NOTIC: [8] Undefined index: order E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 162 行.
+NOTIC: [8] Undefined variable: field E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 181 行.
+NOTIC: [8] Undefined index: where E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 189 行.
+NOTIC: [8] Undefined index: decrypt E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 241 行.
+NOTIC: [8] Undefined index: scope E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 247 行.
+NOTIC: [8] Undefined index: count E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 248 行.
+NOTIC: [8] Undefined index: find E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 254 行.
+SQL: SELECT `id`,`title`,`content`,`creator_id`,`file_id`,`create_time`,`update_time`,`status` FROM `edu_frame_notice` WHERE `status` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0181s ]
+INFO: [ before_view ] --START--
+SQL: SHOW COLUMNS FROM `edu_frame_alert` [ RunTime:0.0302s ]
+SQL: SELECT `id`,`category`,`icon`,`message`,`url`,`type`,`create_time` FROM `edu_frame_alert` where `to_users` LIKE '%,18,%' AND ( IFNULL(`read_users`,'')='' OR `read_users` NOT LIKE '%,18,%') AND `status`=1 ORDER BY `id` DESC [ RunTime:0.0005s ]
+INFO: Run Common\Behavior\HyBeforeViewBehavior [ RunTime:0.035844s ]
+INFO: [ before_view ] --END-- [ RunTime:0.036073s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000435s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000677s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058771s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000968s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001229s ]
+INFO: [ action_end ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.000210s ]
+INFO: [ action_end ] --END-- [ RunTime:0.001689s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001325s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001550s ]
+
+[ 2016-03-26T18:12:06+08:00 ] ::1 /sis/index.php/System/HyChat/ajax?q=list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000947s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003035s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.005007s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.005436s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jxnu_sis.edu_frame_chat' doesn't exist
+
+[ 2016-03-26T18:12:06+08:00 ] ::1 /sis/index.php/System/Index/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000772s ]
+
+[ 2016-03-26T18:12:10+08:00 ] ::1 /sis/index.php/System/HyStart/switchs/role/encrypt_act-chOuBX_D0AzjJcrjuLu_CCsqJ34AryPGM-1kAjBcHPtPs8ejT1DP2kkzkiEZrS9fbC3zAzGr3LB1GVYDLnyMcA.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001161s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001438s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001630s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001947s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `edu_frame_role` [ RunTime:0.0059s ]
+SQL: SELECT `id`,`name`,`title`,`table` FROM `edu_frame_role` WHERE `status` = 1 AND `id` IN ('22','32','31')  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `edu_user` [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `edu_frame_access` [ RunTime:0.0059s ]
+SQL: SELECT `action_id`,`model` FROM `edu_frame_access` WHERE ( `role_id`=32 AND `status`=1 )  [ RunTime:0.0007s ]
+SQL: SELECT `pid` FROM `edu_frame_role` WHERE ( `id`=32 AND `status`=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `action_id`,`model` FROM `edu_frame_access` WHERE ( `role_id`=31 AND `status`=1 )  [ RunTime:0.0013s ]
+SQL: SELECT `pid` FROM `edu_frame_role` WHERE ( `id`=31 AND `status`=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `action_id`,`model` FROM `edu_frame_access` WHERE ( `role_id`=10 AND `status`=1 )  [ RunTime:0.0006s ]
+SQL: SELECT `pid` FROM `edu_frame_role` WHERE ( `id`=10 AND `status`=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`type`,`title`,`name`,`options` FROM `edu_frame_action` WHERE `status`=1 AND `id` IN (100000,510000,510300,510303,510301,510302,310000,310101,310102,310103,310104,310105,310201,310202,310203,310204,310205,310206,1100100,310300,310301,310302,310303,310304,310305,310306,310307,510304,510305,510306,510307,610000,1100000,1100200,1,2,3,4,210000,210100,210101,210102,210103,210104,210105,210200,210201,210202,210203,210204,210205,210206,310100,310200,420000,420100,420101,420102,420103,420104,420105,420106,420200,420201,420202,420203,420204,420205,420206,420300,420301,420302,420303,420304,420305,420306,510100,510101,510103,510104,510105,510106,510308,610100,610101,610102,610103,610104,610105,610106,610200,610201,610202,610203,610204,610205,610206,610300,610301,610302,610303,610304,610305,610306,810000,810100,810101,810102,810103,810104,810105,810106,810200,810201,810202,810203,810204,810205,810300,810301,810302,810303,810304,810305,810400,810401,810402,810403,810404,810405,1000000,1000100,1000101,1000102,1000103,210207,510102,710000,710100,710101,710102,710103,710104,710105,810107,810108,910000,910100,910101,910200,910201) ORDER BY `rank` DESC [ RunTime:0.0026s ]
+SQL: SELECT `id`,`pid`,`type`,`title`,`name`,`options` FROM `edu_frame_action` WHERE `status`=1 AND `id` IN (100000,510000,510300,510303,510301,510302,310000,310101,310102,310103,310104,310105,310201,310202,310203,310204,310205,310206,1100100,310300,310301,310302,310303,310304,310305,310306,310307,510304,510305,510306,510307,610000,1100000,1100200,1,2,3,4,210000,210100,210101,210102,210103,210104,210105,210200,210201,210202,210203,210204,210205,210206,310100,310200,420000,420100,420101,420102,420103,420104,420105,420106,420200,420201,420202,420203,420204,420205,420206,420300,420301,420302,420303,420304,420305,420306,510100,510101,510103,510104,510105,510106,510308,610100,610101,610102,610103,610104,610105,610106,610200,610201,610202,610203,610204,610205,610206,610300,610301,610302,610303,610304,610305,610306,810000,810100,810101,810102,810103,810104,810105,810106,810200,810201,810202,810203,810204,810205,810300,810301,810302,810303,810304,810305,810400,810401,810402,810403,810404,810405,1000000,1000100,1000101,1000102,1000103,210207,510102,710000,710100,710101,710102,710103,710104,710105,810107,810108,910000,910100,910101,910200,910201) ORDER BY `rank` DESC [ RunTime:0.0031s ]
+SQL: SELECT `id`,`pid`,`type`,`title`,`name`,`options` FROM `edu_frame_action` WHERE `status`=1 AND `id` IN (100000,510000,510300,510303,510301,510302,310000,310101,310102,310103,310104,310105,310201,310202,310203,310204,310205,310206,1100100,310300,310301,310302,310303,310304,310305,310306,310307,510304,510305,510306,510307,610000,1100000,1100200,1,2,3,4,210000,210100,210101,210102,210103,210104,210105,210200,210201,210202,210203,210204,210205,210206,310100,310200,420000,420100,420101,420102,420103,420104,420105,420106,420200,420201,420202,420203,420204,420205,420206,420300,420301,420302,420303,420304,420305,420306,510100,510101,510103,510104,510105,510106,510308,610100,610101,610102,610103,610104,610105,610106,610200,610201,610202,610203,610204,610205,610206,610300,610301,610302,610303,610304,610305,610306,810000,810100,810101,810102,810103,810104,810105,810106,810200,810201,810202,810203,810204,810205,810300,810301,810302,810303,810304,810305,810400,810401,810402,810403,810404,810405,1000000,1000100,1000101,1000102,1000103,210207,510102,710000,710100,710101,710102,710103,710104,710105,810107,810108,910000,910100,910101,910200,910201) ORDER BY `rank` DESC [ RunTime:0.0030s ]
+
+[ 2016-03-26T18:12:10+08:00 ] ::1 /sis/index.php/System/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000133s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001121s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001483s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001744s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.002098s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `edu_frame_log` [ RunTime:0.0043s ]
+SQL: SELECT `create_time` FROM `edu_frame_log` WHERE `user_id` = 18 AND `status` = 1 AND `controller` = 'HyStart' AND `action` = 'ajax' AND `description` LIKE '%成功%' ORDER BY id desc LIMIT 2   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `edu_frame_notice` [ RunTime:0.0067s ]
+NOTIC: [8] Undefined index: associate E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 141 行.
+NOTIC: [8] Undefined index: order E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 162 行.
+NOTIC: [8] Undefined variable: field E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 181 行.
+NOTIC: [8] Undefined index: where E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 189 行.
+NOTIC: [8] Undefined index: decrypt E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 241 行.
+NOTIC: [8] Undefined index: scope E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 247 行.
+NOTIC: [8] Undefined index: count E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 248 行.
+NOTIC: [8] Undefined index: find E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 254 行.
+SQL: SELECT `id`,`title`,`content`,`creator_id`,`file_id`,`create_time`,`update_time`,`status` FROM `edu_frame_notice` WHERE `status` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0005s ]
+INFO: [ before_view ] --START--
+SQL: SHOW COLUMNS FROM `edu_frame_alert` [ RunTime:0.0080s ]
+SQL: SELECT `id`,`category`,`icon`,`message`,`url`,`type`,`create_time` FROM `edu_frame_alert` where `to_users` LIKE '%,18,%' AND ( IFNULL(`read_users`,'')='' OR `read_users` NOT LIKE '%,18,%') AND `status`=1 ORDER BY `id` DESC [ RunTime:0.0005s ]
+INFO: Run Common\Behavior\HyBeforeViewBehavior [ RunTime:0.012873s ]
+INFO: [ before_view ] --END-- [ RunTime:0.013097s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000425s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000665s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051785s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052019s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001006s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001228s ]
+INFO: [ action_end ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.000202s ]
+INFO: [ action_end ] --END-- [ RunTime:0.000659s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005975s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006415s ]
+
+[ 2016-03-26T18:12:11+08:00 ] ::1 /sis/index.php/System/HyChat/ajax?q=list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006940s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001807s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.002091s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jxnu_sis.edu_frame_chat' doesn't exist
+
+[ 2016-03-26T18:13:13+08:00 ] ::1 /sis/index.php/System/HyStart/online?keepTry=qUhmK8341e5yJ%2Fqn3D8VmZpyEGO8rdR6sDes2CU8184%3D2396022
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002006s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005685s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001544s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001779s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+
+[ 2016-03-26T18:14:14+08:00 ] ::1 /sis/index.php/System/HyStart/online?keepTry=puzZCMsntaZ4uwQWUF8ZEBZaqIxT0HRpBLjpCNf5VBQ%3D2412403
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001109s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001311s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001293s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001504s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+
+[ 2016-03-26T18:15:14+08:00 ] ::1 /sis/index.php/System/HyStart/online?keepTry=nR0sWhcw2dkQykm7EyRJ%2B9QhApldGQaw6mvL%2BU1z0EE%3D8438018
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000782s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001150s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001346s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001203s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001424s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+
+[ 2016-03-26T18:16:14+08:00 ] ::1 /sis/index.php/System/HyStart/online?keepTry=mL1Ucfi5aRKL3qBTC%2BM2ZE8AjrUSKzTNzOV7VFUW6HQ%3D1757988
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001135s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001135s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001351s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001491s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001713s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+
+[ 2016-03-26T18:17:14+08:00 ] ::1 /sis/index.php/System/HyStart/online?keepTry=qKhthEDP1JEPh5uiD8XaXvPqYyOhTbl%2B%2BJ6p9PNNbHA%3D1381110
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000855s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001179s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001389s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001559s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001766s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+
+[ 2016-03-26T18:18:14+08:00 ] ::1 /sis/index.php/System/HyStart/online?keepTry=MxjRaoZQ6jUpONGkYjzjtBmvavjR7o0hFjNf8S%2FsGc0%3D8251624
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001519s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001194s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001399s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001672s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001904s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+
+[ 2016-03-26T18:19:14+08:00 ] ::1 /sis/index.php/System/HyStart/online?keepTry=cOHbngo%2B%2FBbD5YwrpP4yZtO2luZdXywp%2BfiFp%2BcZtV8%3D4248608
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000085s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001148s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001351s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001363s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001567s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+
+[ 2016-03-26T18:20:14+08:00 ] ::1 /sis/index.php/System/HyStart/online?keepTry=UdvLExFhkt42qr%2FO4u17nBdshfeFiqfT9G19P53AkJ0%3D3029538
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000821s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001183s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001391s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001404s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001632s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+
+[ 2016-03-26T18:21:14+08:00 ] ::1 /sis/index.php/System/HyStart/online?keepTry=ZipxtboC5q0nwPfzDR7hRZJj1bCSoigun5JMg8NArUs%3D4935703
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001404s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001534s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001747s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+
+[ 2016-03-26T18:22:14+08:00 ] ::1 /sis/index.php/System/HyStart/online?keepTry=oA5N26WU1NzW7xd6Z8bmwgw2oQUhkdgnEQKPjzt29n4%3D4880458
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000951s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001483s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.002453s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.002678s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+
+[ 2016-03-26T18:23:14+08:00 ] ::1 /sis/index.php/System/HyStart/online?keepTry=3%2FExzjIKpJzGjQAqagWX8Ybp8bLxyIK2Rg6Mba%2BXNGU%3D4853399
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000943s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001561s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001303s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001508s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+
+[ 2016-03-26T18:24:14+08:00 ] ::1 /sis/index.php/System/HyStart/online?keepTry=SB0lGsNcrMcNel5x7tO3mqpMNhWf09JPKXjFL0bDI2w%3D2935565
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000969s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001546s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001425s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001628s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+
+[ 2016-03-26T20:50:40+08:00 ] ::1 /sis/index.php/System/HyStart/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001108s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001498s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001566s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001833s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `edu_frame_setting` [ RunTime:0.0509s ]
+SQL: SELECT `key`,`value` FROM `edu_frame_setting` WHERE `status` < 9  [ RunTime:0.0238s ]
+INFO: [ before_view ] --START--
+INFO: Run Common\Behavior\HyBeforeViewBehavior [ RunTime:0.002190s ]
+INFO: [ before_view ] --END-- [ RunTime:0.002498s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000295s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000532s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040040s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040305s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000875s ]
+INFO: [ action_end ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.000203s ]
+INFO: [ action_end ] --END-- [ RunTime:0.000656s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.177841s ]
+INFO: [ app_end ] --END-- [ RunTime:0.178096s ]
+
+[ 2016-03-26T20:50:48+08:00 ] ::1 /sis/index.php/System/HyStart/ajax?q=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000753s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003662s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.002610s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.002869s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+NOTIC: [8] Undefined variable: logStep E:\wamp\www\sis\Application\System\Controller\HyStartController.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `edu_user` [ RunTime:0.0409s ]
+NOTIC: [2] Missing argument 1 for Common\Model\HyFrameModel::find(), called in E:\wamp\www\sis\Application\Common\Model\HyAccountModel.class.php on line 25 and defined E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 271 行.
+NOTIC: [8] Undefined variable: options E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 272 行.
+NOTIC: [8] Undefined variable: options E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 272 行.
+SQL: SELECT `id`,`name`,`roles`,`user_no`,`password`,`sex`,`birth`,`phone`,`qq`,`email`,`country`,`session_id`,`login_last_time`,`login_times`,`status`,`english_name`,`admission_time` FROM `edu_user` WHERE `user_no` = '123' AND `status` = 1 LIMIT 1   [ RunTime:0.0332s ]
+SQL: UPDATE `edu_user` SET `login_last_time`='1458996647',`login_times`='574',`session_id`='madkbk4ho6orbva8tddhs2c7p4' WHERE `id` = 18 [ RunTime:0.0871s ]
+NOTIC: [8] Undefined index: avatar_file E:\wamp\www\sis\Application\System\Controller\HyStartController.class.php 第 100 行.
+NOTIC: [8] Undefined index: college_id E:\wamp\www\sis\Application\Common\Model\HyAccountModel.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `edu_frame_role` [ RunTime:0.0257s ]
+SQL: SELECT `id`,`name`,`title`,`table` FROM `edu_frame_role` WHERE `status` = 1 AND `id` IN ('22','32','31')  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `edu_user` [ RunTime:0.0079s ]
+SQL: SHOW COLUMNS FROM `edu_frame_access` [ RunTime:0.0069s ]
+SQL: SELECT `action_id`,`model` FROM `edu_frame_access` WHERE ( `role_id`=22 AND `status`=1 )  [ RunTime:0.0316s ]
+SQL: SELECT `pid` FROM `edu_frame_role` WHERE ( `id`=22 AND `status`=1 ) LIMIT 1   [ RunTime:0.0457s ]
+SQL: SELECT `action_id`,`model` FROM `edu_frame_access` WHERE ( `role_id`=10 AND `status`=1 )  [ RunTime:0.0341s ]
+SQL: SELECT `pid` FROM `edu_frame_role` WHERE ( `id`=10 AND `status`=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`pid`,`type`,`title`,`name`,`options` FROM `edu_frame_action` WHERE `status`=1 AND `id` IN (100000,510000,510300,510303,510301,510302,310000,310101,310102,310103,310104,310105,310201,310202,310203,310204,310205,310206,1100100,310300,310301,310302,310303,310304,310305,310306,310307,510304,510305,510306,510307,610000,1100000,1100200,510200,510201,510400,510203,310400,310401,310402,310403,310404,310405,310500,310501,310502,1000000,1000100,510401,510402,510403,510404,610100,610101,610200,610201,610300,610301,610106,610206,610306,310406,310506,1000101,1000102,1000103,510308) ORDER BY `rank` DESC [ RunTime:0.2324s ]
+SQL: SELECT `id`,`pid`,`type`,`title`,`name`,`options` FROM `edu_frame_action` WHERE `status`=1 AND `id` IN (100000,510000,510300,510303,510301,510302,310000,310101,310102,310103,310104,310105,310201,310202,310203,310204,310205,310206,1100100,310300,310301,310302,310303,310304,310305,310306,310307,510304,510305,510306,510307,610000,1100000,1100200,510200,510201,510400,510203,310400,310401,310402,310403,310404,310405,310500,310501,310502,1000000,1000100,510401,510402,510403,510404,610100,610101,610200,610201,610300,610301,610106,610206,610306,310406,310506,1000101,1000102,1000103,510308) ORDER BY `rank` DESC [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `edu_frame_log` [ RunTime:0.0088s ]
+SQL: INSERT INTO `edu_frame_log` (`user_id`,`controller`,`action`,`post`,`description`,`ip`,`create_time`) VALUES ('18','HyStart','ajax','{\"u\":\"WXZc1w\\/vwR2iKTsTJk4ffA==4785931\",\"p\":\"DTZyAyt8\\/p+7xXMD3ULUdW8YShg0\\/DBPGd6PNO5BR3PvCuYQO+5Gcanp0WoDMTmp1602361\"}',' >> 登录验证 >> <span class=\'text-success\'>成功</span>','0.0.0.0','1458996648') [ RunTime:0.0221s ]
+
+[ 2016-03-26T20:50:49+08:00 ] ::1 /sis/index.php/System/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002644s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002969s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001723s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.002231s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `edu_frame_log` [ RunTime:0.0071s ]
+SQL: SELECT `create_time` FROM `edu_frame_log` WHERE `user_id` = 18 AND `status` = 1 AND `controller` = 'HyStart' AND `action` = 'ajax' AND `description` LIKE '%成功%' ORDER BY id desc LIMIT 2   [ RunTime:0.0149s ]
+SQL: SHOW COLUMNS FROM `edu_frame_notice` [ RunTime:0.0334s ]
+NOTIC: [8] Undefined index: associate E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 141 行.
+NOTIC: [8] Undefined index: order E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 162 行.
+NOTIC: [8] Undefined variable: field E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 181 行.
+NOTIC: [8] Undefined index: where E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 189 行.
+NOTIC: [8] Undefined index: decrypt E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 241 行.
+NOTIC: [8] Undefined index: scope E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 247 行.
+NOTIC: [8] Undefined index: count E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 248 行.
+NOTIC: [8] Undefined index: find E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 254 行.
+SQL: SELECT `id`,`title`,`content`,`creator_id`,`file_id`,`create_time`,`update_time`,`status` FROM `edu_frame_notice` WHERE `status` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0227s ]
+INFO: [ before_view ] --START--
+SQL: SHOW COLUMNS FROM `edu_frame_alert` [ RunTime:0.0319s ]
+SQL: SELECT `id`,`category`,`icon`,`message`,`url`,`type`,`create_time` FROM `edu_frame_alert` where `to_users` LIKE '%,18,%' AND ( IFNULL(`read_users`,'')='' OR `read_users` NOT LIKE '%,18,%') AND `status`=1 ORDER BY `id` DESC [ RunTime:0.0008s ]
+INFO: Run Common\Behavior\HyBeforeViewBehavior [ RunTime:0.065175s ]
+INFO: [ before_view ] --END-- [ RunTime:0.065463s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000501s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000833s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.080105s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080339s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001697s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001922s ]
+INFO: [ action_end ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.000356s ]
+INFO: [ action_end ] --END-- [ RunTime:0.000641s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001328s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001603s ]
+
+[ 2016-03-26T20:50:50+08:00 ] ::1 /sis/index.php/System/HyChat/ajax?q=list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000763s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001477s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001510s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001749s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jxnu_sis.edu_frame_chat' doesn't exist
+
+[ 2016-03-26T20:50:55+08:00 ] ::1 /sis/index.php/System/HyStart/switchs/role/encrypt_act-S1ex5pZTz8QbTKMzwXtmCqxPoeili4OBuTDrryRungWK1kT5edDHF6v3_o-_-LTxjBFuchTSU5vQPAHXmJP6Sw.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000801s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001139s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001380s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001735s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.002010s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `edu_frame_role` [ RunTime:0.0054s ]
+SQL: SELECT `id`,`name`,`title`,`table` FROM `edu_frame_role` WHERE `status` = 1 AND `id` IN ('22','32','31')  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `edu_user` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `edu_frame_access` [ RunTime:0.0047s ]
+SQL: SELECT `action_id`,`model` FROM `edu_frame_access` WHERE ( `role_id`=32 AND `status`=1 )  [ RunTime:0.0091s ]
+SQL: SELECT `pid` FROM `edu_frame_role` WHERE ( `id`=32 AND `status`=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `action_id`,`model` FROM `edu_frame_access` WHERE ( `role_id`=31 AND `status`=1 )  [ RunTime:0.0012s ]
+SQL: SELECT `pid` FROM `edu_frame_role` WHERE ( `id`=31 AND `status`=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `action_id`,`model` FROM `edu_frame_access` WHERE ( `role_id`=10 AND `status`=1 )  [ RunTime:0.0009s ]
+SQL: SELECT `pid` FROM `edu_frame_role` WHERE ( `id`=10 AND `status`=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`type`,`title`,`name`,`options` FROM `edu_frame_action` WHERE `status`=1 AND `id` IN (100000,510000,510300,510303,510301,510302,310000,310101,310102,310103,310104,310105,310201,310202,310203,310204,310205,310206,1100100,310300,310301,310302,310303,310304,310305,310306,310307,510304,510305,510306,510307,610000,1100000,1100200,1,2,3,4,210000,210100,210101,210102,210103,210104,210105,210200,210201,210202,210203,210204,210205,210206,310100,310200,420000,420100,420101,420102,420103,420104,420105,420106,420200,420201,420202,420203,420204,420205,420206,420300,420301,420302,420303,420304,420305,420306,510100,510101,510103,510104,510105,510106,510308,610100,610101,610102,610103,610104,610105,610106,610200,610201,610202,610203,610204,610205,610206,610300,610301,610302,610303,610304,610305,610306,810000,810100,810101,810102,810103,810104,810105,810106,810200,810201,810202,810203,810204,810205,810300,810301,810302,810303,810304,810305,810400,810401,810402,810403,810404,810405,1000000,1000100,1000101,1000102,1000103,210207,510102,710000,710100,710101,710102,710103,710104,710105,810107,810108,910000,910100,910101,910200,910201) ORDER BY `rank` DESC [ RunTime:0.0227s ]
+SQL: SELECT `id`,`pid`,`type`,`title`,`name`,`options` FROM `edu_frame_action` WHERE `status`=1 AND `id` IN (100000,510000,510300,510303,510301,510302,310000,310101,310102,310103,310104,310105,310201,310202,310203,310204,310205,310206,1100100,310300,310301,310302,310303,310304,310305,310306,310307,510304,510305,510306,510307,610000,1100000,1100200,1,2,3,4,210000,210100,210101,210102,210103,210104,210105,210200,210201,210202,210203,210204,210205,210206,310100,310200,420000,420100,420101,420102,420103,420104,420105,420106,420200,420201,420202,420203,420204,420205,420206,420300,420301,420302,420303,420304,420305,420306,510100,510101,510103,510104,510105,510106,510308,610100,610101,610102,610103,610104,610105,610106,610200,610201,610202,610203,610204,610205,610206,610300,610301,610302,610303,610304,610305,610306,810000,810100,810101,810102,810103,810104,810105,810106,810200,810201,810202,810203,810204,810205,810300,810301,810302,810303,810304,810305,810400,810401,810402,810403,810404,810405,1000000,1000100,1000101,1000102,1000103,210207,510102,710000,710100,710101,710102,710103,710104,710105,810107,810108,910000,910100,910101,910200,910201) ORDER BY `rank` DESC [ RunTime:0.0027s ]
+SQL: SELECT `id`,`pid`,`type`,`title`,`name`,`options` FROM `edu_frame_action` WHERE `status`=1 AND `id` IN (100000,510000,510300,510303,510301,510302,310000,310101,310102,310103,310104,310105,310201,310202,310203,310204,310205,310206,1100100,310300,310301,310302,310303,310304,310305,310306,310307,510304,510305,510306,510307,610000,1100000,1100200,1,2,3,4,210000,210100,210101,210102,210103,210104,210105,210200,210201,210202,210203,210204,210205,210206,310100,310200,420000,420100,420101,420102,420103,420104,420105,420106,420200,420201,420202,420203,420204,420205,420206,420300,420301,420302,420303,420304,420305,420306,510100,510101,510103,510104,510105,510106,510308,610100,610101,610102,610103,610104,610105,610106,610200,610201,610202,610203,610204,610205,610206,610300,610301,610302,610303,610304,610305,610306,810000,810100,810101,810102,810103,810104,810105,810106,810200,810201,810202,810203,810204,810205,810300,810301,810302,810303,810304,810305,810400,810401,810402,810403,810404,810405,1000000,1000100,1000101,1000102,1000103,210207,510102,710000,710100,710101,710102,710103,710104,710105,810107,810108,910000,910100,910101,910200,910201) ORDER BY `rank` DESC [ RunTime:0.0030s ]
+
+[ 2016-03-26T20:50:55+08:00 ] ::1 /sis/index.php/System/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000795s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001125s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001407s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001836s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.002120s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `edu_frame_log` [ RunTime:0.0053s ]
+SQL: SELECT `create_time` FROM `edu_frame_log` WHERE `user_id` = 18 AND `status` = 1 AND `controller` = 'HyStart' AND `action` = 'ajax' AND `description` LIKE '%成功%' ORDER BY id desc LIMIT 2   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `edu_frame_notice` [ RunTime:0.0053s ]
+NOTIC: [8] Undefined index: associate E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 141 行.
+NOTIC: [8] Undefined index: order E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 162 行.
+NOTIC: [8] Undefined variable: field E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 181 行.
+NOTIC: [8] Undefined index: where E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 189 行.
+NOTIC: [8] Undefined index: decrypt E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 241 行.
+NOTIC: [8] Undefined index: scope E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 247 行.
+NOTIC: [8] Undefined index: count E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 248 行.
+NOTIC: [8] Undefined index: find E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 254 行.
+SQL: SELECT `id`,`title`,`content`,`creator_id`,`file_id`,`create_time`,`update_time`,`status` FROM `edu_frame_notice` WHERE `status` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0005s ]
+INFO: [ before_view ] --START--
+SQL: SHOW COLUMNS FROM `edu_frame_alert` [ RunTime:0.0054s ]
+SQL: SELECT `id`,`category`,`icon`,`message`,`url`,`type`,`create_time` FROM `edu_frame_alert` where `to_users` LIKE '%,18,%' AND ( IFNULL(`read_users`,'')='' OR `read_users` NOT LIKE '%,18,%') AND `status`=1 ORDER BY `id` DESC [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\HyBeforeViewBehavior [ RunTime:0.011522s ]
+INFO: [ before_view ] --END-- [ RunTime:0.011788s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000422s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000686s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050916s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051328s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000933s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001218s ]
+INFO: [ action_end ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.000140s ]
+INFO: [ action_end ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004354s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004740s ]
+
+[ 2016-03-26T20:50:56+08:00 ] ::1 /sis/index.php/System/HyChat/ajax?q=list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002545s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.002149s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.002455s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jxnu_sis.edu_frame_chat' doesn't exist
+
+[ 2016-03-26T20:52:35+08:00 ] ::1 /sis/index.php/System/HyStart/online?keepTry=TYi%2B33GB5tqwYTUBnUvz3XBNTWD%2B2dHsgq4bN6yvN0I%3D270270
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000756s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001163s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001359s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001401s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001619s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+
+[ 2016-03-26T20:53:35+08:00 ] ::1 /sis/index.php/System/HyStart/online?keepTry=wfjOjNccVNoWSrJGGmkPr9AY87tOqyv6DWZmcWkVYgk%3D3721395
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000098s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001468s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001578s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001806s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+
+[ 2016-03-26T20:54:49+08:00 ] ::1 /sis/index.php/System/HyStart/online?keepTry=zkoruJ196tCevKaBDGGqnP8kzJY0eenEBOItRrWbsqA%3D5390637
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000987s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000898s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001095s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.002135s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.002467s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+
+[ 2016-03-26T20:55:49+08:00 ] ::1 /sis/index.php/System/HyStart/online?keepTry=ldICwe3fstHu1W7SMCemrZ0b%2FZ%2BSWcwGQGLU3JVREFg%3D4992585
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000765s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001730s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.002405s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.002747s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+
+[ 2016-03-26T21:08:43+08:00 ] ::1 /sis/index.php/System/HyStart/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000830s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001272s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001645s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001868s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `edu_frame_setting` [ RunTime:0.0054s ]
+SQL: SELECT `key`,`value` FROM `edu_frame_setting` WHERE `status` < 9  [ RunTime:0.0004s ]
+INFO: [ before_view ] --START--
+INFO: Run Common\Behavior\HyBeforeViewBehavior [ RunTime:0.001259s ]
+INFO: [ before_view ] --END-- [ RunTime:0.001483s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000299s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000502s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017614s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017828s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000790s ]
+INFO: [ action_end ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.000212s ]
+INFO: [ action_end ] --END-- [ RunTime:0.000650s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001362s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001561s ]
+
+[ 2016-03-26T21:08:53+08:00 ] ::1 /sis/index.php/System/HyStart/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000979s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001177s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001436s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001708s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001992s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `edu_frame_setting` [ RunTime:0.0070s ]
+SQL: SELECT `key`,`value` FROM `edu_frame_setting` WHERE `status` < 9  [ RunTime:0.0004s ]
+INFO: [ before_view ] --START--
+INFO: Run Common\Behavior\HyBeforeViewBehavior [ RunTime:0.001613s ]
+INFO: [ before_view ] --END-- [ RunTime:0.001914s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000313s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000568s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021970s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022230s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000788s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001018s ]
+INFO: [ action_end ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.000109s ]
+INFO: [ action_end ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001132s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001591s ]
+
+[ 2016-03-26T21:08:57+08:00 ] ::1 /sis/index.php/System/HyStart/ajax?q=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000902s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003584s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001644s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001932s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+NOTIC: [8] Undefined variable: logStep E:\wamp\www\sis\Application\System\Controller\HyStartController.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `edu_user` [ RunTime:0.0053s ]
+NOTIC: [2] Missing argument 1 for Common\Model\HyFrameModel::find(), called in E:\wamp\www\sis\Application\Common\Model\HyAccountModel.class.php on line 25 and defined E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 271 行.
+NOTIC: [8] Undefined variable: options E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 272 行.
+NOTIC: [8] Undefined variable: options E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 272 行.
+SQL: SELECT `id`,`name`,`roles`,`user_no`,`password`,`sex`,`birth`,`phone`,`qq`,`email`,`country`,`session_id`,`login_last_time`,`login_times`,`status`,`english_name`,`admission_time` FROM `edu_user` WHERE `user_no` = '123' AND `status` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: UPDATE `edu_user` SET `login_last_time`='1458997737',`login_times`='575',`session_id`='gbhvo4q4th27b2sk8d1ktfjnh1' WHERE `id` = 18 [ RunTime:0.0728s ]
+NOTIC: [8] Undefined index: avatar_file E:\wamp\www\sis\Application\System\Controller\HyStartController.class.php 第 100 行.
+NOTIC: [8] Undefined index: college_id E:\wamp\www\sis\Application\Common\Model\HyAccountModel.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `edu_frame_role` [ RunTime:0.0044s ]
+SQL: SELECT `id`,`name`,`title`,`table` FROM `edu_frame_role` WHERE `status` = 1 AND `id` IN ('22','32','31')  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `edu_user` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `edu_frame_access` [ RunTime:0.0044s ]
+SQL: SELECT `action_id`,`model` FROM `edu_frame_access` WHERE ( `role_id`=22 AND `status`=1 )  [ RunTime:0.0008s ]
+SQL: SELECT `pid` FROM `edu_frame_role` WHERE ( `id`=22 AND `status`=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `action_id`,`model` FROM `edu_frame_access` WHERE ( `role_id`=10 AND `status`=1 )  [ RunTime:0.0006s ]
+SQL: SELECT `pid` FROM `edu_frame_role` WHERE ( `id`=10 AND `status`=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`type`,`title`,`name`,`options` FROM `edu_frame_action` WHERE `status`=1 AND `id` IN (100000,510000,510300,510303,510301,510302,310000,310101,310102,310103,310104,310105,310201,310202,310203,310204,310205,310206,1100100,310300,310301,310302,310303,310304,310305,310306,310307,510304,510305,510306,510307,610000,1100000,1100200,510200,510201,510400,510203,310400,310401,310402,310403,310404,310405,310500,310501,310502,1000000,1000100,510401,510402,510403,510404,610100,610101,610200,610201,610300,610301,610106,610206,610306,310406,310506,1000101,1000102,1000103,510308) ORDER BY `rank` DESC [ RunTime:0.0014s ]
+SQL: SELECT `id`,`pid`,`type`,`title`,`name`,`options` FROM `edu_frame_action` WHERE `status`=1 AND `id` IN (100000,510000,510300,510303,510301,510302,310000,310101,310102,310103,310104,310105,310201,310202,310203,310204,310205,310206,1100100,310300,310301,310302,310303,310304,310305,310306,310307,510304,510305,510306,510307,610000,1100000,1100200,510200,510201,510400,510203,310400,310401,310402,310403,310404,310405,310500,310501,310502,1000000,1000100,510401,510402,510403,510404,610100,610101,610200,610201,610300,610301,610106,610206,610306,310406,310506,1000101,1000102,1000103,510308) ORDER BY `rank` DESC [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `edu_frame_log` [ RunTime:0.0066s ]
+SQL: INSERT INTO `edu_frame_log` (`user_id`,`controller`,`action`,`post`,`description`,`ip`,`create_time`) VALUES ('18','HyStart','ajax','{\"u\":\"5+BBsXmB9yDesVvhP\\/dBHg==5730857\",\"p\":\"KfmgukwdqcSbY3gxZWzu5DkrDSVqMRNRcRYzCZ8VnXNJWqJHRwjl1Bwk50YHmYcO7059867\"}',' >> 登录验证 >> <span class=\'text-success\'>成功</span>','0.0.0.0','1458997737') [ RunTime:0.0005s ]
+
+[ 2016-03-26T21:08:58+08:00 ] ::1 /sis/index.php/System/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000822s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001368s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001448s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001721s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `edu_frame_log` [ RunTime:0.0046s ]
+SQL: SELECT `create_time` FROM `edu_frame_log` WHERE `user_id` = 18 AND `status` = 1 AND `controller` = 'HyStart' AND `action` = 'ajax' AND `description` LIKE '%成功%' ORDER BY id desc LIMIT 2   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `edu_frame_notice` [ RunTime:0.0044s ]
+NOTIC: [8] Undefined index: associate E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 141 行.
+NOTIC: [8] Undefined index: order E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 162 行.
+NOTIC: [8] Undefined variable: field E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 181 行.
+NOTIC: [8] Undefined index: where E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 189 行.
+NOTIC: [8] Undefined index: decrypt E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 241 行.
+NOTIC: [8] Undefined index: scope E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 247 行.
+NOTIC: [8] Undefined index: count E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 248 行.
+NOTIC: [8] Undefined index: find E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 254 行.
+SQL: SELECT `id`,`title`,`content`,`creator_id`,`file_id`,`create_time`,`update_time`,`status` FROM `edu_frame_notice` WHERE `status` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0006s ]
+INFO: [ before_view ] --START--
+SQL: SHOW COLUMNS FROM `edu_frame_alert` [ RunTime:0.0059s ]
+SQL: SELECT `id`,`category`,`icon`,`message`,`url`,`type`,`create_time` FROM `edu_frame_alert` where `to_users` LIKE '%,18,%' AND ( IFNULL(`read_users`,'')='' OR `read_users` NOT LIKE '%,18,%') AND `status`=1 ORDER BY `id` DESC [ RunTime:0.0006s ]
+INFO: Run Common\Behavior\HyBeforeViewBehavior [ RunTime:0.011253s ]
+INFO: [ before_view ] --END-- [ RunTime:0.011487s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000513s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000978s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059069s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059333s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002707s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002992s ]
+INFO: [ action_end ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.000507s ]
+INFO: [ action_end ] --END-- [ RunTime:0.000838s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.016153s ]
+INFO: [ app_end ] --END-- [ RunTime:0.016461s ]
+
+[ 2016-03-26T21:08:59+08:00 ] ::1 /sis/index.php/System/HyChat/ajax?q=list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000851s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001094s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001341s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001532s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001909s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jxnu_sis.edu_frame_chat' doesn't exist
+
+[ 2016-03-26T21:09:01+08:00 ] ::1 /sis/index.php/System/HyStart/switchs/role/encrypt_act-e1WwCZ1QN7s6Z7Ra003h7E3JRSQHlfZRIN6muRDs9VDe9kVubNrTDuP978XQzR6lAyR-m14KPAopEp3AnLfE8Q.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000890s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000993s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001255s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001548s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001816s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `edu_frame_role` [ RunTime:0.0054s ]
+SQL: SELECT `id`,`name`,`title`,`table` FROM `edu_frame_role` WHERE `status` = 1 AND `id` IN ('22','32','31')  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `edu_user` [ RunTime:0.0074s ]
+SQL: SHOW COLUMNS FROM `edu_frame_access` [ RunTime:0.0051s ]
+SQL: SELECT `action_id`,`model` FROM `edu_frame_access` WHERE ( `role_id`=32 AND `status`=1 )  [ RunTime:0.0012s ]
+SQL: SELECT `pid` FROM `edu_frame_role` WHERE ( `id`=32 AND `status`=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `action_id`,`model` FROM `edu_frame_access` WHERE ( `role_id`=31 AND `status`=1 )  [ RunTime:0.0013s ]
+SQL: SELECT `pid` FROM `edu_frame_role` WHERE ( `id`=31 AND `status`=1 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `action_id`,`model` FROM `edu_frame_access` WHERE ( `role_id`=10 AND `status`=1 )  [ RunTime:0.0012s ]
+SQL: SELECT `pid` FROM `edu_frame_role` WHERE ( `id`=10 AND `status`=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`type`,`title`,`name`,`options` FROM `edu_frame_action` WHERE `status`=1 AND `id` IN (100000,510000,510300,510303,510301,510302,310000,310101,310102,310103,310104,310105,310201,310202,310203,310204,310205,310206,1100100,310300,310301,310302,310303,310304,310305,310306,310307,510304,510305,510306,510307,610000,1100000,1100200,1,2,3,4,210000,210100,210101,210102,210103,210104,210105,210200,210201,210202,210203,210204,210205,210206,310100,310200,420000,420100,420101,420102,420103,420104,420105,420106,420200,420201,420202,420203,420204,420205,420206,420300,420301,420302,420303,420304,420305,420306,510100,510101,510103,510104,510105,510106,510308,610100,610101,610102,610103,610104,610105,610106,610200,610201,610202,610203,610204,610205,610206,610300,610301,610302,610303,610304,610305,610306,810000,810100,810101,810102,810103,810104,810105,810106,810200,810201,810202,810203,810204,810205,810300,810301,810302,810303,810304,810305,810400,810401,810402,810403,810404,810405,1000000,1000100,1000101,1000102,1000103,210207,510102,710000,710100,710101,710102,710103,710104,710105,810107,810108,910000,910100,910101,910200,910201) ORDER BY `rank` DESC [ RunTime:0.0124s ]
+SQL: SELECT `id`,`pid`,`type`,`title`,`name`,`options` FROM `edu_frame_action` WHERE `status`=1 AND `id` IN (100000,510000,510300,510303,510301,510302,310000,310101,310102,310103,310104,310105,310201,310202,310203,310204,310205,310206,1100100,310300,310301,310302,310303,310304,310305,310306,310307,510304,510305,510306,510307,610000,1100000,1100200,1,2,3,4,210000,210100,210101,210102,210103,210104,210105,210200,210201,210202,210203,210204,210205,210206,310100,310200,420000,420100,420101,420102,420103,420104,420105,420106,420200,420201,420202,420203,420204,420205,420206,420300,420301,420302,420303,420304,420305,420306,510100,510101,510103,510104,510105,510106,510308,610100,610101,610102,610103,610104,610105,610106,610200,610201,610202,610203,610204,610205,610206,610300,610301,610302,610303,610304,610305,610306,810000,810100,810101,810102,810103,810104,810105,810106,810200,810201,810202,810203,810204,810205,810300,810301,810302,810303,810304,810305,810400,810401,810402,810403,810404,810405,1000000,1000100,1000101,1000102,1000103,210207,510102,710000,710100,710101,710102,710103,710104,710105,810107,810108,910000,910100,910101,910200,910201) ORDER BY `rank` DESC [ RunTime:0.0027s ]
+SQL: SELECT `id`,`pid`,`type`,`title`,`name`,`options` FROM `edu_frame_action` WHERE `status`=1 AND `id` IN (100000,510000,510300,510303,510301,510302,310000,310101,310102,310103,310104,310105,310201,310202,310203,310204,310205,310206,1100100,310300,310301,310302,310303,310304,310305,310306,310307,510304,510305,510306,510307,610000,1100000,1100200,1,2,3,4,210000,210100,210101,210102,210103,210104,210105,210200,210201,210202,210203,210204,210205,210206,310100,310200,420000,420100,420101,420102,420103,420104,420105,420106,420200,420201,420202,420203,420204,420205,420206,420300,420301,420302,420303,420304,420305,420306,510100,510101,510103,510104,510105,510106,510308,610100,610101,610102,610103,610104,610105,610106,610200,610201,610202,610203,610204,610205,610206,610300,610301,610302,610303,610304,610305,610306,810000,810100,810101,810102,810103,810104,810105,810106,810200,810201,810202,810203,810204,810205,810300,810301,810302,810303,810304,810305,810400,810401,810402,810403,810404,810405,1000000,1000100,1000101,1000102,1000103,210207,510102,710000,710100,710101,710102,710103,710104,710105,810107,810108,910000,910100,910101,910200,910201) ORDER BY `rank` DESC [ RunTime:0.0032s ]
+
+[ 2016-03-26T21:09:02+08:00 ] ::1 /sis/index.php/System/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001207s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001542s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001390s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001652s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `edu_frame_log` [ RunTime:0.0047s ]
+SQL: SELECT `create_time` FROM `edu_frame_log` WHERE `user_id` = 18 AND `status` = 1 AND `controller` = 'HyStart' AND `action` = 'ajax' AND `description` LIKE '%成功%' ORDER BY id desc LIMIT 2   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `edu_frame_notice` [ RunTime:0.0053s ]
+NOTIC: [8] Undefined index: associate E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 141 行.
+NOTIC: [8] Undefined index: order E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 162 行.
+NOTIC: [8] Undefined variable: field E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 181 行.
+NOTIC: [8] Undefined index: where E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 189 行.
+NOTIC: [8] Undefined index: decrypt E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 241 行.
+NOTIC: [8] Undefined index: scope E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 247 行.
+NOTIC: [8] Undefined index: count E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 248 行.
+NOTIC: [8] Undefined index: find E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 254 行.
+SQL: SELECT `id`,`title`,`content`,`creator_id`,`file_id`,`create_time`,`update_time`,`status` FROM `edu_frame_notice` WHERE `status` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0005s ]
+INFO: [ before_view ] --START--
+SQL: SHOW COLUMNS FROM `edu_frame_alert` [ RunTime:0.0054s ]
+SQL: SELECT `id`,`category`,`icon`,`message`,`url`,`type`,`create_time` FROM `edu_frame_alert` where `to_users` LIKE '%,18,%' AND ( IFNULL(`read_users`,'')='' OR `read_users` NOT LIKE '%,18,%') AND `status`=1 ORDER BY `id` DESC [ RunTime:0.0005s ]
+INFO: Run Common\Behavior\HyBeforeViewBehavior [ RunTime:0.011059s ]
+INFO: [ before_view ] --END-- [ RunTime:0.011284s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000483s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000733s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064341s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064582s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001024s ]
+INFO: [ action_end ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.000150s ]
+INFO: [ action_end ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.069775s ]
+INFO: [ app_end ] --END-- [ RunTime:0.070633s ]
+
+[ 2016-03-26T21:09:03+08:00 ] ::1 /sis/index.php/System/HyChat/ajax?q=list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000937s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001010s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001241s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001494s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001721s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jxnu_sis.edu_frame_chat' doesn't exist
+
+[ 2016-03-26T21:10:08+08:00 ] ::1 /sis/index.php/System/HyStart/online?keepTry=m9ri0%2B0BuhqIDI7fAJe9RJerV%2BnSlFntZrIunIkFvj0%3D7683559
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000841s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001491s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001643s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001861s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+
+[ 2016-03-26T21:10:09+08:00 ] ::1 /sis/index.php/System/HyStart/online?keepTry=niXcBPx%2BFT3gyDrCC8WZKMQQ%2F3QiIPYp1hnI2fyhehs%3D3635545
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000897s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001878s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002263s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001687s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001913s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+
+[ 2016-03-26T21:11:08+08:00 ] ::1 /sis/index.php/System/HyStart/online?keepTry=s2nemB7VCBA%2BMQal0oV2%2B688Jf6vOs4Y2WHrle%2B8Bt8%3D9809418
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001438s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001937s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002231s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.002402s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.002714s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+
+[ 2016-03-26T21:11:10+08:00 ] ::1 /sis/index.php/System/HyStart/online?keepTry=5mQYS8g5p%2FrHMaEgDT3mx8D4i2N%2FTi8u%2FglNVtiHT7M%3D3331548
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000820s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001619s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001594s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001813s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+
+[ 2016-03-26T21:12:08+08:00 ] ::1 /sis/index.php/System/HyStart/online?keepTry=RW4lu%2BKwhm5ag9abnxEtWDxr3iij6iaUEG%2FwUnp3bHI%3D4816388
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000859s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001487s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001583s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001803s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+
+[ 2016-03-26T21:12:10+08:00 ] ::1 /sis/index.php/System/HyStart/online?keepTry=Uu5t5BWA8DiHrwqEhoLMelJiWqkOFyuZCQiQzREBods%3D2497647
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000877s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001125s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001324s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.002096s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.002415s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+
+[ 2016-03-26T21:13:08+08:00 ] ::1 /sis/index.php/System/HyStart/online?keepTry=g%2BDmBUFEtluAVBsBx3HpR3n7njIt1DCHPDMQuYKmtUU%3D8168851
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001122s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001317s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001451s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001666s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+
+[ 2016-03-26T21:13:10+08:00 ] ::1 /sis/index.php/System/HyStart/online?keepTry=6MlxLJtc5r3rHDMSVvYsW%2BgFD18rH9E%2FTYeexxwdZAg%3D2967762
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000784s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001145s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001343s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001542s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001770s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+
+[ 2016-03-26T21:14:08+08:00 ] ::1 /sis/index.php/System/HyStart/online?keepTry=UsAhAfNlRKvj1qQC37p6qmVt3S%2F8tv5UjDODWc23Hnc%3D7628479
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000992s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001156s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001356s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001824s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.002044s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+
+[ 2016-03-26T21:14:10+08:00 ] ::1 /sis/index.php/System/HyStart/online?keepTry=CHuN5m1qWeYOBh1%2FTokCOERYkl24477LZ1fikNMgcYA%3D4365336
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001506s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012043s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001771s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.002030s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+
+[ 2016-03-26T21:15:08+08:00 ] ::1 /sis/index.php/System/HyStart/online?keepTry=O8AliSGH0Gr0K14IXhWvHrOpvgYLldbYg%2BlGz8xB%2BhM%3D4210227
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000979s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001111s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001309s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001382s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001594s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+
+[ 2016-03-26T21:15:10+08:00 ] ::1 /sis/index.php/System/HyStart/online?keepTry=gdncFdmZYa5m%2BJE%2FVDdUoy0fwDrAsEnlCZQlUKLCvKE%3D7900845
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000146s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001977s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.002114s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.002443s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+
+[ 2016-03-26T21:16:08+08:00 ] ::1 /sis/index.php/System/HyStart/online?keepTry=vkWuYg1cJ72vonVimLjWyzRESP6F2h33p3DbrLKBUx8%3D4066675
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001450s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001155s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001393s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001423s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001640s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+
+[ 2016-03-26T21:16:10+08:00 ] ::1 /sis/index.php/System/HyStart/online?keepTry=uOOkXRSl9zIQUmtif4iGLbyDzJMsNjfb48JlU9DIkxs%3D2178509
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002167s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001405s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001634s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+
+[ 2016-03-26T21:17:08+08:00 ] ::1 /sis/index.php/System/HyStart/online?keepTry=YxJd9QxXEgIry3UnBkKldSO4PGpHFcbiF%2BkE6BB6d8A%3D1169569
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000865s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001158s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001355s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.003588s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.003879s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+
+[ 2016-03-26T21:17:10+08:00 ] ::1 /sis/index.php/System/HyStart/online?keepTry=tuvaIqzMtW%2FF2r7Ak3KZxGSCaimqsIzSzTAOn5Ulrps%3D3532064
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001186s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001834s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002131s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.002256s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.002580s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+
+[ 2016-03-26T21:18:08+08:00 ] ::1 /sis/index.php/System/HyStart/online?keepTry=smDs2%2BfuKvxsfByTHBmTX1mplIFP6fElxTYGeK4E8ao%3D1620832
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000948s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001523s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001419s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001633s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+
+[ 2016-03-26T21:18:10+08:00 ] ::1 /sis/index.php/System/HyStart/online?keepTry=tfJ5TvDEL9CgoTXjjXO7%2B74QHF3ZhhRnKQ6WuodHSFU%3D3053593
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001005s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003030s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001600s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001869s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+
+[ 2016-03-26T21:19:08+08:00 ] ::1 /sis/index.php/System/HyStart/online?keepTry=Uqtw0cJ3kJEkepD%2FVmq1hU6inwInf%2FSml4DC85Hk5xs%3D7630763
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000807s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001163s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001364s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001466s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001689s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+
+[ 2016-03-26T21:19:10+08:00 ] ::1 /sis/index.php/System/HyStart/online?keepTry=qKxflt47z%2Bc8ZLSWrE%2B8akZR1vX2os3CBavPgQhGBkE%3D6828202
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002144s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.002199s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.002513s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+
+[ 2016-03-26T21:20:10+08:00 ] ::1 /sis/index.php/System/HyStart/online?keepTry=Wa2izGSYXfUL7%2F4YCPm0Wxj0hdv%2FzgQxcy%2Bxtw5OhFA%3D4362686
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001295s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001424s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001636s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+
+[ 2016-03-26T21:20:56+08:00 ] ::1 /sis/index.php/System/HyStart/online?keepTry=1TQdXNyDgu0FoPg%2BUweWxJil7c%2FY2gZ%2BzV%2FVHidFYWA%3D6097820
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000772s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001286s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.002148s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.002451s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+
+[ 2016-03-26T21:21:10+08:00 ] ::1 /sis/index.php/System/HyStart/online?keepTry=T9Cz1hUJanEmqAqV%2FvZnxaRF7%2BMfb1mKobJVBj8bdWI%3D1472810
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000749s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001268s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001419s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001627s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+
+[ 2016-03-26T21:21:56+08:00 ] ::1 /sis/index.php/System/HyStart/online?keepTry=DsqB7CN785bp%2FL67POkYqRWn21dRM0mDAvGkztMdlFk%3D7092544
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000754s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001181s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001394s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.002117s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.002415s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+
+[ 2016-03-26T21:22:10+08:00 ] ::1 /sis/index.php/System/HyStart/online?keepTry=OA%2Frato2wtWyP8kjhZVh40VTMz3oPT9WXMmUM6uEAoA%3D1701819
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000790s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001194s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001396s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001499s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001705s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+
+[ 2016-03-26T21:22:56+08:00 ] ::1 /sis/index.php/System/HyStart/online?keepTry=OOvFKR6voJ1EtRrs1SN6DGXqAEeMwLPUhWNzS12a1Cw%3D3537253
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001126s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001334s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001553s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001761s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+
+[ 2016-03-26T21:23:10+08:00 ] ::1 /sis/index.php/System/HyStart/online?keepTry=Sl7Mbb3mzGnVINmOuPL88Zj2jji3DSLRLGR8I0pB2Jk%3D531330
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000940s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001836s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.002334s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.002668s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+
+[ 2016-03-26T21:23:56+08:00 ] ::1 /sis/index.php/System/HyStart/online?keepTry=puhaAx724Zow%2BvtZlNYxKMkDE90WNa%2BULBY36HXxzn8%3D2802663
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000881s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001102s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001301s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001547s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001757s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+
+[ 2016-03-26T21:24:10+08:00 ] ::1 /sis/index.php/System/HyStart/online?keepTry=Dewyo8bvecUyFsZ7ntMcvaR7zkf0lrjvLLftmAqSbFk%3D3272591
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000855s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001493s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001606s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001815s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+
+[ 2016-03-26T21:24:56+08:00 ] ::1 /sis/index.php/System/HyStart/online?keepTry=7n0CoQTblJrEnm%2BD1lyQxgYr0iCcC%2FhuxqqKO2e7TYE%3D1025974
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000824s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001162s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001374s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001948s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.002201s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+
+[ 2016-03-26T21:25:11+08:00 ] ::1 /sis/index.php/System/HyStart/online?keepTry=PqpOsxCXX3GmFWXoFQjyh4FYe1U9FfxbbyXyZB5hJg0%3D9251489
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000978s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001122s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001335s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.002371s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.002688s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+
+[ 2016-03-26T21:25:56+08:00 ] ::1 /sis/index.php/System/HyStart/online?keepTry=5THLp%2FeEu2p2xTZdErCM23zutsvJtBMtJ8L2RagxzZM%3D5326231
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000986s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001219s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002508s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001746s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001967s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+
+[ 2016-03-26T21:26:10+08:00 ] ::1 /sis/index.php/System/HyStart/online?keepTry=LcOzHJ3ThwZ5BWbpi%2F7fTOGmiNWY92z5vwZHEd%2Ft360%3D6438920
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000781s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001576s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001569s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001780s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+
+[ 2016-03-26T21:35:43+08:00 ] ::1 /sis/index.php/System/HyStart/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001066s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011136s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011418s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001601s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001873s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `edu_frame_setting` [ RunTime:0.0061s ]
+SQL: SELECT `key`,`value` FROM `edu_frame_setting` WHERE `status` < 9  [ RunTime:0.0007s ]
+INFO: [ before_view ] --START--
+INFO: Run Common\Behavior\HyBeforeViewBehavior [ RunTime:0.104063s ]
+INFO: [ before_view ] --END-- [ RunTime:0.104331s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000305s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000565s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.223246s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.223528s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.219756s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.220060s ]
+INFO: [ action_end ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.000470s ]
+INFO: [ action_end ] --END-- [ RunTime:0.003368s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.019208s ]
+INFO: [ app_end ] --END-- [ RunTime:0.019477s ]
+
+[ 2016-03-26T21:35:50+08:00 ] ::1 /sis/index.php/System/HyStart/ajax?q=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000899s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003232s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001729s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001962s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+NOTIC: [8] Undefined variable: logStep E:\wamp\www\sis\Application\System\Controller\HyStartController.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `edu_user` [ RunTime:0.0061s ]
+NOTIC: [2] Missing argument 1 for Common\Model\HyFrameModel::find(), called in E:\wamp\www\sis\Application\Common\Model\HyAccountModel.class.php on line 25 and defined E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 271 行.
+NOTIC: [8] Undefined variable: options E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 272 行.
+NOTIC: [8] Undefined variable: options E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 272 行.
+SQL: SELECT `id`,`name`,`roles`,`user_no`,`password`,`sex`,`birth`,`phone`,`qq`,`email`,`country`,`session_id`,`login_last_time`,`login_times`,`status`,`english_name`,`admission_time` FROM `edu_user` WHERE `user_no` = '123' AND `status` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: UPDATE `edu_user` SET `login_last_time`='1458999349',`login_times`='576',`session_id`='cmgj4evsc4b2pqj2r5opge3253' WHERE `id` = 18 [ RunTime:0.4045s ]
+NOTIC: [8] Undefined index: avatar_file E:\wamp\www\sis\Application\System\Controller\HyStartController.class.php 第 100 行.
+NOTIC: [8] Undefined index: college_id E:\wamp\www\sis\Application\Common\Model\HyAccountModel.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `edu_frame_role` [ RunTime:0.0053s ]
+SQL: SELECT `id`,`name`,`title`,`table` FROM `edu_frame_role` WHERE `status` = 1 AND `id` IN ('22','32','31')  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `edu_user` [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `edu_frame_access` [ RunTime:0.0086s ]
+SQL: SELECT `action_id`,`model` FROM `edu_frame_access` WHERE ( `role_id`=22 AND `status`=1 )  [ RunTime:0.0016s ]
+SQL: SELECT `pid` FROM `edu_frame_role` WHERE ( `id`=22 AND `status`=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `action_id`,`model` FROM `edu_frame_access` WHERE ( `role_id`=10 AND `status`=1 )  [ RunTime:0.0008s ]
+SQL: SELECT `pid` FROM `edu_frame_role` WHERE ( `id`=10 AND `status`=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`type`,`title`,`name`,`options` FROM `edu_frame_action` WHERE `status`=1 AND `id` IN (100000,510000,510300,510303,510301,510302,310000,310101,310102,310103,310104,310105,310201,310202,310203,310204,310205,310206,1100100,310300,310301,310302,310303,310304,310305,310306,310307,510304,510305,510306,510307,610000,1100000,1100200,510200,510201,510400,510203,310400,310401,310402,310403,310404,310405,310500,310501,310502,1000000,1000100,510401,510402,510403,510404,610100,610101,610200,610201,610300,610301,610106,610206,610306,310406,310506,1000101,1000102,1000103,510308) ORDER BY `rank` DESC [ RunTime:0.0015s ]
+SQL: SELECT `id`,`pid`,`type`,`title`,`name`,`options` FROM `edu_frame_action` WHERE `status`=1 AND `id` IN (100000,510000,510300,510303,510301,510302,310000,310101,310102,310103,310104,310105,310201,310202,310203,310204,310205,310206,1100100,310300,310301,310302,310303,310304,310305,310306,310307,510304,510305,510306,510307,610000,1100000,1100200,510200,510201,510400,510203,310400,310401,310402,310403,310404,310405,310500,310501,310502,1000000,1000100,510401,510402,510403,510404,610100,610101,610200,610201,610300,610301,610106,610206,610306,310406,310506,1000101,1000102,1000103,510308) ORDER BY `rank` DESC [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `edu_frame_log` [ RunTime:0.0070s ]
+SQL: INSERT INTO `edu_frame_log` (`user_id`,`controller`,`action`,`post`,`description`,`ip`,`create_time`) VALUES ('18','HyStart','ajax','{\"u\":\"YR5PdtqxYDM6yGJj\\/egbEQ==9822407\",\"p\":\"COel3mQ0J1wdOn4yxfzCg0y7jVxLjgXshkGNEolDgNmhoJwEeC9pGi79dCeYAwRM9460415\"}',' >> 登录验证 >> <span class=\'text-success\'>成功</span>','0.0.0.0','1458999350') [ RunTime:0.0008s ]
+
+[ 2016-03-26T21:35:51+08:00 ] ::1 /sis/index.php/System/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000883s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001967s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006695s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001711s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.002014s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `edu_frame_log` [ RunTime:0.0049s ]
+SQL: SELECT `create_time` FROM `edu_frame_log` WHERE `user_id` = 18 AND `status` = 1 AND `controller` = 'HyStart' AND `action` = 'ajax' AND `description` LIKE '%成功%' ORDER BY id desc LIMIT 2   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `edu_frame_notice` [ RunTime:0.0075s ]
+NOTIC: [8] Undefined index: associate E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 141 行.
+NOTIC: [8] Undefined index: order E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 162 行.
+NOTIC: [8] Undefined variable: field E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 181 行.
+NOTIC: [8] Undefined index: where E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 189 行.
+NOTIC: [8] Undefined index: decrypt E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 241 行.
+NOTIC: [8] Undefined index: scope E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 247 行.
+NOTIC: [8] Undefined index: count E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 248 行.
+NOTIC: [8] Undefined index: find E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 254 行.
+SQL: SELECT `id`,`title`,`content`,`creator_id`,`file_id`,`create_time`,`update_time`,`status` FROM `edu_frame_notice` WHERE `status` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0006s ]
+INFO: [ before_view ] --START--
+SQL: SHOW COLUMNS FROM `edu_frame_alert` [ RunTime:0.0068s ]
+SQL: SELECT `id`,`category`,`icon`,`message`,`url`,`type`,`create_time` FROM `edu_frame_alert` where `to_users` LIKE '%,18,%' AND ( IFNULL(`read_users`,'')='' OR `read_users` NOT LIKE '%,18,%') AND `status`=1 ORDER BY `id` DESC [ RunTime:0.0005s ]
+INFO: Run Common\Behavior\HyBeforeViewBehavior [ RunTime:0.026499s ]
+INFO: [ before_view ] --END-- [ RunTime:0.026736s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000456s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000772s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.342674s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.342953s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002429s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002729s ]
+INFO: [ action_end ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.002441s ]
+INFO: [ action_end ] --END-- [ RunTime:0.012738s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.021004s ]
+INFO: [ app_end ] --END-- [ RunTime:0.021252s ]
+
+[ 2016-03-26T21:35:53+08:00 ] ::1 /sis/index.php/System/HyChat/ajax?q=list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000767s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001636s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001498s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001720s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jxnu_sis.edu_frame_chat' doesn't exist
+
+[ 2016-03-26T21:36:00+08:00 ] ::1 /sis/index.php/System/HyStart/switchs/role/encrypt_act-nys8ElfP48dc_SPX74eT6b69D82PA3U-8lPXPoeeRhkE1f9zQekGRKOMuMAhAg1_UpTVUL9Hn6qqWQsJ0P-ZZw.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000991s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001284s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001922s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.002332s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `edu_frame_role` [ RunTime:0.0068s ]
+SQL: SELECT `id`,`name`,`title`,`table` FROM `edu_frame_role` WHERE `status` = 1 AND `id` IN ('22','32','31')  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `edu_user` [ RunTime:0.0094s ]
+SQL: SHOW COLUMNS FROM `edu_frame_access` [ RunTime:0.0051s ]
+SQL: SELECT `action_id`,`model` FROM `edu_frame_access` WHERE ( `role_id`=32 AND `status`=1 )  [ RunTime:0.0008s ]
+SQL: SELECT `pid` FROM `edu_frame_role` WHERE ( `id`=32 AND `status`=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `action_id`,`model` FROM `edu_frame_access` WHERE ( `role_id`=31 AND `status`=1 )  [ RunTime:0.0015s ]
+SQL: SELECT `pid` FROM `edu_frame_role` WHERE ( `id`=31 AND `status`=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `action_id`,`model` FROM `edu_frame_access` WHERE ( `role_id`=10 AND `status`=1 )  [ RunTime:0.0008s ]
+SQL: SELECT `pid` FROM `edu_frame_role` WHERE ( `id`=10 AND `status`=1 ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `id`,`pid`,`type`,`title`,`name`,`options` FROM `edu_frame_action` WHERE `status`=1 AND `id` IN (100000,510000,510300,510303,510301,510302,310000,310101,310102,310103,310104,310105,310201,310202,310203,310204,310205,310206,1100100,310300,310301,310302,310303,310304,310305,310306,310307,510304,510305,510306,510307,610000,1100000,1100200,1,2,3,4,210000,210100,210101,210102,210103,210104,210105,210200,210201,210202,210203,210204,210205,210206,310100,310200,420000,420100,420101,420102,420103,420104,420105,420106,420200,420201,420202,420203,420204,420205,420206,420300,420301,420302,420303,420304,420305,420306,510100,510101,510103,510104,510105,510106,510308,610100,610101,610102,610103,610104,610105,610106,610200,610201,610202,610203,610204,610205,610206,610300,610301,610302,610303,610304,610305,610306,810000,810100,810101,810102,810103,810104,810105,810106,810200,810201,810202,810203,810204,810205,810300,810301,810302,810303,810304,810305,810400,810401,810402,810403,810404,810405,1000000,1000100,1000101,1000102,1000103,210207,510102,710000,710100,710101,710102,710103,710104,710105,810107,810108,910000,910100,910101,910200,910201) ORDER BY `rank` DESC [ RunTime:0.0031s ]
+SQL: SELECT `id`,`pid`,`type`,`title`,`name`,`options` FROM `edu_frame_action` WHERE `status`=1 AND `id` IN (100000,510000,510300,510303,510301,510302,310000,310101,310102,310103,310104,310105,310201,310202,310203,310204,310205,310206,1100100,310300,310301,310302,310303,310304,310305,310306,310307,510304,510305,510306,510307,610000,1100000,1100200,1,2,3,4,210000,210100,210101,210102,210103,210104,210105,210200,210201,210202,210203,210204,210205,210206,310100,310200,420000,420100,420101,420102,420103,420104,420105,420106,420200,420201,420202,420203,420204,420205,420206,420300,420301,420302,420303,420304,420305,420306,510100,510101,510103,510104,510105,510106,510308,610100,610101,610102,610103,610104,610105,610106,610200,610201,610202,610203,610204,610205,610206,610300,610301,610302,610303,610304,610305,610306,810000,810100,810101,810102,810103,810104,810105,810106,810200,810201,810202,810203,810204,810205,810300,810301,810302,810303,810304,810305,810400,810401,810402,810403,810404,810405,1000000,1000100,1000101,1000102,1000103,210207,510102,710000,710100,710101,710102,710103,710104,710105,810107,810108,910000,910100,910101,910200,910201) ORDER BY `rank` DESC [ RunTime:0.0034s ]
+SQL: SELECT `id`,`pid`,`type`,`title`,`name`,`options` FROM `edu_frame_action` WHERE `status`=1 AND `id` IN (100000,510000,510300,510303,510301,510302,310000,310101,310102,310103,310104,310105,310201,310202,310203,310204,310205,310206,1100100,310300,310301,310302,310303,310304,310305,310306,310307,510304,510305,510306,510307,610000,1100000,1100200,1,2,3,4,210000,210100,210101,210102,210103,210104,210105,210200,210201,210202,210203,210204,210205,210206,310100,310200,420000,420100,420101,420102,420103,420104,420105,420106,420200,420201,420202,420203,420204,420205,420206,420300,420301,420302,420303,420304,420305,420306,510100,510101,510103,510104,510105,510106,510308,610100,610101,610102,610103,610104,610105,610106,610200,610201,610202,610203,610204,610205,610206,610300,610301,610302,610303,610304,610305,610306,810000,810100,810101,810102,810103,810104,810105,810106,810200,810201,810202,810203,810204,810205,810300,810301,810302,810303,810304,810305,810400,810401,810402,810403,810404,810405,1000000,1000100,1000101,1000102,1000103,210207,510102,710000,710100,710101,710102,710103,710104,710105,810107,810108,910000,910100,910101,910200,910201) ORDER BY `rank` DESC [ RunTime:0.0967s ]
+
+[ 2016-03-26T21:36:01+08:00 ] ::1 /sis/index.php/System/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001025s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001114s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001499s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001890s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.002191s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `edu_frame_log` [ RunTime:0.0064s ]
+SQL: SELECT `create_time` FROM `edu_frame_log` WHERE `user_id` = 18 AND `status` = 1 AND `controller` = 'HyStart' AND `action` = 'ajax' AND `description` LIKE '%成功%' ORDER BY id desc LIMIT 2   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `edu_frame_notice` [ RunTime:0.0063s ]
+NOTIC: [8] Undefined index: associate E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 141 行.
+NOTIC: [8] Undefined index: order E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 162 行.
+NOTIC: [8] Undefined variable: field E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 181 行.
+NOTIC: [8] Undefined index: where E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 189 行.
+NOTIC: [8] Undefined index: decrypt E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 241 行.
+NOTIC: [8] Undefined index: scope E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 247 行.
+NOTIC: [8] Undefined index: count E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 248 行.
+NOTIC: [8] Undefined index: find E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 254 行.
+SQL: SELECT `id`,`title`,`content`,`creator_id`,`file_id`,`create_time`,`update_time`,`status` FROM `edu_frame_notice` WHERE `status` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0019s ]
+INFO: [ before_view ] --START--
+SQL: SHOW COLUMNS FROM `edu_frame_alert` [ RunTime:0.0049s ]
+SQL: SELECT `id`,`category`,`icon`,`message`,`url`,`type`,`create_time` FROM `edu_frame_alert` where `to_users` LIKE '%,18,%' AND ( IFNULL(`read_users`,'')='' OR `read_users` NOT LIKE '%,18,%') AND `status`=1 ORDER BY `id` DESC [ RunTime:0.0006s ]
+INFO: Run Common\Behavior\HyBeforeViewBehavior [ RunTime:0.010209s ]
+INFO: [ before_view ] --END-- [ RunTime:0.010446s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000638s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000943s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.074734s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074976s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000842s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001070s ]
+INFO: [ action_end ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.000111s ]
+INFO: [ action_end ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004175s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004416s ]
+
+[ 2016-03-26T21:36:02+08:00 ] ::1 /sis/index.php/System/HyChat/ajax?q=list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000165s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001144s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001087s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001332s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001577s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001799s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jxnu_sis.edu_frame_chat' doesn't exist
+
+[ 2016-03-26T21:37:06+08:00 ] ::1 /sis/index.php/System/HyStart/online?keepTry=3zr0Ma%2Beya4CKbPe0Lr6rmTfr19xLzFslk%2FzngkLt48%3D2685921
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000851s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001128s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001347s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001610s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001855s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+
+[ 2016-03-26T21:38:08+08:00 ] ::1 /sis/index.php/System/HyStart/online?keepTry=QNmbUx%2Bq8%2Bx%2BDSOMrroVtZ0L62fb2b%2FEwtmMEcPSYe4%3D3179756
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001626s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001652s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001908s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) E:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model E:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+

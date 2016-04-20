@@ -1,0 +1,79 @@
+<extend name="Public:frameset"/>
+<block name="style">
+    <link href="__PUBLIC__/assets/pages/styles/login_home.css" rel="stylesheet" type="text/css"/>
+</block>
+<block name="page-body">
+
+    <div class="container">
+        <div class="row" style="margin-top: 120px">
+            <div class="col-md-7 col-md-offset-3 col-xs-12 col-xs-12">
+                <form class="form-horizontal pwd-form">
+
+                    <div class="form-group">
+                        <div class="col-md-offset-3 col-md-6">
+                            <img class="center-block img-circle" src="__PUBLIC__/assets/pages/img/bg/loginLogo.png">
+                        </div>
+                    </div>
+
+                    <div class="form-group ">
+                        <label for="hy_old_password" class="col-md-3 control-label">原密码</label>
+                        <div class="col-lg-6">
+                            <input type="password" name="hy_old_password" class="form-control input-lg" id="hy_old_password" placeholder="请输入原密码">
+                        </div>
+                    </div>
+
+                    <div class="form-group ">
+                        <label for="hy_new_password" class="col-md-3 control-label">新密码</label>
+                        <div class="col-md-6">
+                            <input type="password" name="hy_new_password" class="form-control input-lg" id="hy_new_password" placeholder="请输入新密码">
+                        </div>
+                    </div>
+                    <div class="form-group ">
+                        <label for="hy_confirm_password" class="col-md-3 control-label">确认密码</label>
+                        <div class="col-md-6">
+                            <input type="password" name="hy_confirm_password" class="form-control input-lg" id="hy_confirm_password" placeholder="请确认密码">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-offset-3 col-md-6">
+                            <button type="submit" class="btn btn-primary btn-lg btn-block" data-loading-text="提交中请稍后..." data-target="#pwdModal" autocomplete="off" id="pwd-submit">提交修改</button>
+                            <input type="hidden" id="login-addon" value="{:C('PWD_HASH_ADDON')}" />
+                        </div>
+                    </div>
+                    <!-- Modal -->
+
+                    <div class="modal fade" id="pwdModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="myModalLabel">操作提醒</h4>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="pwd-btn">确定</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</block>
+<block name="script">
+    <script type="text/javascript" src="__PUBLIC__/assets/global/plugins/jquery-validation/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/assets/global/plugins/crypto.custom.min.js"></script>
+    <script src="__PUBLIC__/assets/global/scripts/login.js" type="text/javascript"></script>
+</block>
+<block name="script-init">
+    <script type="text/javascript">
+        $(document).ready(function(){
+            Login.init();
+        });
+
+    </script>
+</block>

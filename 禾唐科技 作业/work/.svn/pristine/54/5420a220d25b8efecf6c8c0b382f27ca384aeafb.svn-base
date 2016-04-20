@@ -1,0 +1,47 @@
+<?php
+namespace Home\Controller;
+use Think\Controller;
+class ArticleController extends BaseController {
+    public function _initialize(){
+        parent::_initialize();
+    }
+    public function category(){
+        $category_id = I('category_id');
+        $nAd = D('Details');
+        $category_article = $nAd->getDetail($category_id);
+//        dump($category_article);
+        $count = $nAd->getCount($category_id);
+        $page = $nAd->articlePage($count,C('INDEX_ARTICLE_NUM'));
+        $oneName = $nAd->getParentTitle($category_id);
+        $this->assign('category_article',$category_article)->assign('page',$page)->assign('oneName',$oneName)->assign('count',$count);
+        $this->display();
+    }
+    public function detail(){
+
+        $content_id = I('content_id');
+        $nAd = D('Details');
+        $content = $nAd->Detail($content_id);
+       // dump($content);
+        $this->assign('list',$content);
+        $this->display('detail');
+    }
+    public function searchShow(){
+        $input = I('search')?I('search'):false;
+        $nAd = D('Details');
+        $searchResult=$nAd->searchFun($input);
+      //  dump($searchResult);
+        $this->assign('searchResult',$searchResult)->assign('input',$input)->display('category');
+    }
+
+    public function ajax_get_category_id($content_id){
+        $json['status'] = false;
+        if(!$content_id) $this->ajaxReturn($json);
+        $category_id = D('Details')->get_category($content_id);
+        if(!$category_id){
+            $this->ajaxReturn($json);
+        }
+        $json['status'] = true;
+        $json['data'] = $category_id;
+        $this->ajaxReturn($json);
+    }
+}

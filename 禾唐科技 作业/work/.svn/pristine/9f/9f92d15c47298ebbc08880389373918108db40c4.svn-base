@@ -1,0 +1,198 @@
+<extend name="Public:frameset"/>
+<block name="style">
+<link href="__PUBLIC__/assets/global/plugins/umeditor/themes/default/css/umeditor.css" rel="stylesheet" type="text/css"/>
+    <link href="__PUBLIC__/assets/pages/styles/question-list.css" rel="stylesheet" type="text/css"/>
+</block>
+<block name="page-body">
+	<div class="container">
+		<div class="row">
+			<div class="page-body-left col-md-3">
+                <empty name="course_id">
+                        <div class="side-nav">
+                            <ul>
+                                <a href="{:U('Question/questionList')}">
+                                    <li>
+                                        <i class=" glyphicon glyphicon-list-alt"></i> <span class="nav-text">答疑记录</span>
+                                    </li>
+                                </a>
+                                <span class="after"></span>
+                                <a href="{:U('Question/askQuestion')}">
+                                    <li class="active">
+                                        <i class=" glyphicon glyphicon-list-alt"></i> <span class="nav-text">提问</span>
+                                    </li>
+                                </a>
+                                <span class="after"></span>
+                                <a href="{:U('Question/myQuestion')}">
+                                    <li>
+                                        <i class=" glyphicon glyphicon-list-alt"></i> <span class="nav-text">我的提问</span>
+                                    </li>
+                                </a>
+                                <span class="after"></span>
+                            </ul>
+                        </div>
+                    <else/>
+                    <div class="side-nav">
+                        <ul>
+                            <a href="{:U('GoodCourse/lesson',array('course_id'=>$course_id))}">
+                                <li>
+                                    <i class=" glyphicon glyphicon-list-alt"></i> <span class="nav-text">返回精品课程</span>
+                                </li>
+                            </a>
+                            <span class="after"></span>
+                            <a href="{:U('Question/questionList',array('course_id'=>$course_id))}">
+                                <li>
+                                    <i class=" glyphicon glyphicon-list-alt"></i> <span class="nav-text">答疑记录</span>
+                                </li>
+                            </a>
+                            <span class="after"></span>
+                            <a href="{:U('Question/askQuestion',array('course_id'=>$course_id))}">
+                                <li class="active">
+                                    <i class=" glyphicon glyphicon-list-alt"></i> <span class="nav-text">提问</span>
+                                </li>
+                            </a>
+                            <span class="after"></span>
+                            <a href="{:U('Question/myQuestion',array('course_id'=>$course_id))}">
+                                <li>
+                                    <i class=" glyphicon glyphicon-list-alt"></i> <span class="nav-text">我的提问</span>
+                                </li>
+                            </a>
+                            <span class="after"></span>
+                        </ul>
+                    </div>
+                </empty>
+
+            </div>
+			<div class="page-body-right top30 col-md-8">
+				<div class="row">
+
+                    <p class="bg-danger check-info" id="check-info">...</p>
+
+					<form id="question-form">
+						  <div class="form-group">
+                              <empty name="course_id">
+                                  <div class="col-md-6">
+                                      <select class="form-control ques-type" id="ques-type">
+                                          <option value="" selected disabled>选择问题类型</option>
+                                          <option value="0">问题反馈</option>
+                                          <option value="1">精品课程</option>
+                                      </select>
+                                  </div>
+                                  <div class="col-md-6"></div>
+                                  <div class="col-md-6">
+                                      <select class="form-control ques-course-category" id="ques-course-category">
+                                          <option value="" selected disabled>选择课程</option>
+                                          <volist name="good_course_category" id="v3">
+                                              <option value={$v3['id']}>{$v3['name']}</option>
+                                          </volist>
+                                          <!--<option value="">高数</option>
+                                          <option value="">数字逻辑</option>-->
+                                      </select>
+
+                                      <select class="form-control ques-category" id="ques-category">
+                                          <option value="" selected disabled>选择问题分类</option>
+                                          <volist name="ques_category" id="v1">
+                                              <option value={$v1['id']}>{$v1['name']}</option>
+                                              <volist name="v1['children']" id="v2">
+                                                  <option value={$v2['id']}>&nbsp;&nbsp;|--{$v2['name']}</option>
+                                              </volist>
+                                          </volist>
+                                          <!--<option value="">生活</option>
+                                          <option value="">学习</option>-->
+                                      </select>
+                                  </div>
+
+                                  <else/>
+
+                                      <div class="col-md-6" >
+                                          <select class="form-control ques-type" id="ques-type" style="display:none">
+                                              <option value="1" selected disabled>精品课程</option>
+                                          </select>
+                                      </div>
+                                      <div class="col-md-6"></div>
+                                      <div class="col-md-6" >
+                                          <select class="form-control ques-course-category" id="ques-course-category" style="display:none">
+                                              <volist name="good_course_category" id="v3">
+                                                  <eq name="v3['id']" value="$course_id" >
+                                                      <option value={$v3['id']} selected disabled>{$v3['name']}</option>
+                                                  </eq>
+                                              </volist>
+                                          </select>
+                                          <span class="course-title">精品课程：{$course_name}</span>
+                                      </div>
+                              </empty>
+					      </div>
+					      <div class="form-group">
+						  		<div class="col-md-6">
+						  			<select class="form-control ques-type" id="is_open">
+                                        <option value="" selected disabled>选择是否公开</option>
+                                        <option value="1">公开</option>
+							            <option value="0">不公开</option>
+							        </select>
+						  		</div>
+					      </div>
+						  <div class="form-group">
+						  	<div class="col-md-12">
+						  		<!-- <label>问题标题</label> -->
+						    	<input type="text" class="form-control" placeholder="请输入问题标题" id="title">
+						  	</div>
+						  </div>
+						  <div class="form-group">
+						 	 <div class="col-md-12">
+						 	 	<script type="text/plain" id="content" style="width:1000px;height:240px;">
+   						 			<p>请输入问题的内容</p>
+								</script>
+						 	 </div>
+						  </div>
+						  <div class="form-group">
+					      	<div class="col-md-12">
+					      		 <div class="row">
+					      		 	<div class="col-md-2">
+					      		 		<span class="ques-tags-choose-tip btn ">标签选择</span>
+					      		 	</div>
+					      		 	<div class="col-md-2">
+					      		 		<span class="ques-tags-choose btn btn-default">生活</span>
+					      		 	</div>
+					      		 	<div class="col-md-2">
+					      		 		<span class="ques-tags-choose btn btn-default">学习</span>
+					      		 	</div>
+					      		 </div>
+							</div>
+						  </div>
+						  <div class="form-group">
+					      	<div class="col-md-12">
+						 	 	<input type="text" class="form-control ques-tags" id="ques-tags" placeholder="请输入问题标签">
+							</div>
+						  </div>
+					      <div class="form-group">
+					      	<div class="col-md-12">
+						 	 <button type="button" class="ques-submit btn "  data-loading-text="提交中请稍后..." data-target="#myModal"  id="ques-submit" autocomplete="off">提交</button>
+							</div>
+						  </div>
+                        <!--data-toggle="modal" data-target="#myModal"-->
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel">操作提醒</h4>
+                                    </div>
+                                    <div class="modal-body">
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal" id="check-btn">确定</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+					</form>
+			</div>
+		</div>
+	</div>
+	
+</block>
+<block name="script">
+    <script src="__PUBLIC__/assets/global/scripts/question-xzq.js" type="text/javascript"></script>
+</block>

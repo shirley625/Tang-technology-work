@@ -1,0 +1,58 @@
+<extend name="Public:frameset"/>
+<block name="style"><link rel="stylesheet" type="text/css" href="__PUBLIC__/assets/pages/styles/article.css" /></block>
+<block name="page-body">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="side-nav">
+                    <ul class="side-nav">
+                        <volist name ="list" id="l">
+                            <volist name="l['children']" id="ca1">
+                                <a href="{:U('Article/category',array('category_id'=>$key,'lan_id'=>$lang_id))}">
+                                    <li>
+                                    <span class="side-nav-icon"><i class="glyphicon glyphicon-th-large"></i></span>
+                                    <span class="side-nav-text">{$ca1}</span>
+                                    </li>
+                                </a>
+                            </volist>
+                        </volist>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="headline row">
+                    <div class="col-md-12 col-xs-12">
+                        <ol class="my-breadcrumb">
+                            <li><a href="{:U('Index/index')}">首页</a></li>
+                            <volist name="list" id="l">
+                                <empty name="l['c_pid']">
+
+                                <else/>
+                                <li>{$l['c_name']}</li>
+                                </empty>
+                                <empty name='list'>
+                                <li>暂无文章</li>
+                                <else/>
+                                <li>{$l['category_name']}</li>
+                                </empty>
+                            </volist>
+                        </ol>
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <article>
+                    <volist name="list" id="l">
+                        <div class="article-title text-center">{$l['title']}</div>
+                        <div class="article-info pull-right">
+                            发布者：<span>{$l['user_name']}</span>&nbsp;&nbsp;发布时间：<span>{$l['create_time']|date="Y-m-d",###}</span>&nbsp;&nbsp;阅读：<span>{$l['hit']}</span>次
+                        </div>
+                        <div class="article-content">
+                            <p>{$l['content']}</p>
+                        </div>
+                    </volist>
+                </article>
+            </div>
+        </div>
+    </div>
+</block>

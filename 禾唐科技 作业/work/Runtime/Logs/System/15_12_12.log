@@ -1,0 +1,384 @@
+[ 2015-12-12T16:33:04+08:00 ] ::1 /sis/index.php/System/HyStart/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001200s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001993s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002340s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.003789s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.004207s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) G:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model G:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `edu_frame_setting` [ RunTime:0.0701s ]
+SQL: SELECT `key`,`value` FROM `edu_frame_setting` WHERE `status` < 9  [ RunTime:0.0126s ]
+INFO: [ before_view ] --START--
+INFO: Run Common\Behavior\HyBeforeViewBehavior [ RunTime:0.015062s ]
+INFO: [ before_view ] --END-- [ RunTime:0.015542s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000340s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000702s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036286s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036608s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000852s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001132s ]
+INFO: [ action_end ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.000170s ]
+INFO: [ action_end ] --END-- [ RunTime:0.000632s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001439s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001838s ]
+
+[ 2015-12-12T16:33:05+08:00 ] ::1 /sis/index.php/System/HyStart/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000096s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001289s ]
+
+[ 2015-12-12T16:33:08+08:00 ] ::1 /sis/index.php/System/HyStart/ajax?q=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001106s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001655s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.002628s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.002915s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) G:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model G:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+NOTIC: [8] Undefined variable: logStep G:\wamp\www\sis\Application\System\Controller\HyStartController.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `edu_user` [ RunTime:0.6476s ]
+NOTIC: [2] Missing argument 1 for Common\Model\HyFrameModel::find(), called in G:\wamp\www\sis\Application\Common\Model\HyAccountModel.class.php on line 25 and defined G:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 271 行.
+NOTIC: [8] Undefined variable: options G:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 272 行.
+NOTIC: [8] Undefined variable: options G:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 272 行.
+SQL: SELECT `id`,`name`,`roles`,`user_no`,`password`,`sex`,`birth`,`phone`,`qq`,`email`,`country`,`session_id`,`login_last_time`,`login_times`,`status`,`english_name`,`admission_time` FROM `edu_user` WHERE `user_no` = '123' AND `status` = 1 LIMIT 1   [ RunTime:0.0855s ]
+SQL: UPDATE `edu_user` SET `login_last_time`='1449909187',`login_times`='472',`session_id`='0tg95g9lbakjhtuogn5vfu38m2' WHERE `id` = 18 [ RunTime:0.0513s ]
+NOTIC: [8] Undefined index: avatar_file G:\wamp\www\sis\Application\System\Controller\HyStartController.class.php 第 100 行.
+NOTIC: [8] Undefined index: college_id G:\wamp\www\sis\Application\Common\Model\HyAccountModel.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `edu_frame_role` [ RunTime:0.0509s ]
+SQL: SELECT `id`,`name`,`title`,`table` FROM `edu_frame_role` WHERE `status` = 1 AND `id` IN ('22','32','31')  [ RunTime:0.0263s ]
+SQL: SHOW COLUMNS FROM `edu_user` [ RunTime:0.0118s ]
+SQL: SHOW COLUMNS FROM `edu_frame_access` [ RunTime:0.4752s ]
+SQL: SELECT `action_id`,`model` FROM `edu_frame_access` WHERE ( `role_id`=22 AND `status`=1 )  [ RunTime:0.0145s ]
+SQL: SELECT `pid` FROM `edu_frame_role` WHERE ( `id`=22 AND `status`=1 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `action_id`,`model` FROM `edu_frame_access` WHERE ( `role_id`=10 AND `status`=1 )  [ RunTime:0.0016s ]
+SQL: SELECT `pid` FROM `edu_frame_role` WHERE ( `id`=10 AND `status`=1 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `id`,`pid`,`type`,`title`,`name`,`options` FROM `edu_frame_action` WHERE `status`=1 AND `id` IN (100000,510000,510300,510303,510301,510302,310000,310101,310102,310103,310104,310105,310201,310202,310203,310204,310205,310206,1100100,310300,310301,310302,310303,310304,310305,310306,310307,510304,510305,510306,510307,610000,1100000,1100200,510200,510201,510400,510203,310400,310401,310402,310403,310404,310405,310500,310501,310502,1000000,1000100,510401,510402,510403,510404,610100,610101,610200,610201,610300,610301,610106,610206,610306,310406,310506,1000101,1000102,1000103,510308) ORDER BY `rank` DESC [ RunTime:0.0287s ]
+SQL: SELECT `id`,`pid`,`type`,`title`,`name`,`options` FROM `edu_frame_action` WHERE `status`=1 AND `id` IN (100000,510000,510300,510303,510301,510302,310000,310101,310102,310103,310104,310105,310201,310202,310203,310204,310205,310206,1100100,310300,310301,310302,310303,310304,310305,310306,310307,510304,510305,510306,510307,610000,1100000,1100200,510200,510201,510400,510203,310400,310401,310402,310403,310404,310405,310500,310501,310502,1000000,1000100,510401,510402,510403,510404,610100,610101,610200,610201,610300,610301,610106,610206,610306,310406,310506,1000101,1000102,1000103,510308) ORDER BY `rank` DESC [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `edu_frame_log` [ RunTime:0.1035s ]
+SQL: INSERT INTO `edu_frame_log` (`user_id`,`controller`,`action`,`post`,`description`,`ip`,`create_time`) VALUES ('18','HyStart','ajax','{\"u\":\"oxdK4iTACODwbj3XnZBtbw==1770123\",\"p\":\"Q9Kccv+nhkxvS\\/tQNF1LBDmo4p5WeUcDS3nsibgveHcxwx9YHoQD2xvGmpwqQyR46032389\"}',' >> 登录验证 >> <span class=\'text-success\'>成功</span>','0.0.0.0','1449909188') [ RunTime:0.0068s ]
+
+[ 2015-12-12T16:33:09+08:00 ] ::1 /sis/index.php/System/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001185s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001525s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001795s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.002140s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) G:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model G:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `edu_frame_log` [ RunTime:0.0093s ]
+SQL: SELECT `create_time` FROM `edu_frame_log` WHERE `user_id` = 18 AND `status` = 1 AND `controller` = 'HyStart' AND `action` = 'ajax' AND `description` LIKE '%成功%' ORDER BY id desc LIMIT 2   [ RunTime:0.0284s ]
+SQL: SHOW COLUMNS FROM `edu_frame_notice` [ RunTime:0.0252s ]
+NOTIC: [8] Undefined index: associate G:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 141 行.
+NOTIC: [8] Undefined index: order G:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 162 行.
+NOTIC: [8] Undefined variable: field G:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 181 行.
+NOTIC: [8] Undefined index: where G:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 189 行.
+NOTIC: [8] Undefined index: decrypt G:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 241 行.
+NOTIC: [8] Undefined index: scope G:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 247 行.
+NOTIC: [8] Undefined index: count G:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 248 行.
+NOTIC: [8] Undefined index: find G:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 254 行.
+SQL: SELECT `id`,`title`,`content`,`creator_id`,`file_id`,`create_time`,`update_time`,`status` FROM `edu_frame_notice` WHERE `status` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0013s ]
+INFO: [ before_view ] --START--
+SQL: SHOW COLUMNS FROM `edu_frame_alert` [ RunTime:0.0967s ]
+SQL: SELECT `id`,`category`,`icon`,`message`,`url`,`type`,`create_time` FROM `edu_frame_alert` where `to_users` LIKE '%,18,%' AND ( IFNULL(`read_users`,'')='' OR `read_users` NOT LIKE '%,18,%') AND `status`=1 ORDER BY `id` DESC [ RunTime:0.0021s ]
+INFO: Run Common\Behavior\HyBeforeViewBehavior [ RunTime:0.113929s ]
+INFO: [ before_view ] --END-- [ RunTime:0.114265s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000491s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000810s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.102649s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.103052s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000880s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001212s ]
+INFO: [ action_end ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.000807s ]
+INFO: [ action_end ] --END-- [ RunTime:0.001199s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001927s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002303s ]
+
+[ 2015-12-12T16:33:10+08:00 ] ::1 /sis/index.php/System/HyChat/ajax?q=list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000877s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001752s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.002368s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.002705s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) G:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model G:\wamp\www\sis\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jxnu_sis.edu_frame_chat' doesn't exist
+
+[ 2015-12-12T16:33:11+08:00 ] ::1 /sis/index.php/System/Index/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000085s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000984s ]
+
+[ 2015-12-12T16:33:42+08:00 ] ::1 /sis/index.php/System/HyAlert/all.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000802s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001321s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001967s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.002271s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) G:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `edu_frame_alert` [ RunTime:0.0132s ]
+INFO: [ hy_log ] --START--
+NOTIC: [8] Undefined variable: sql G:\wamp\www\sis\Application\Common\Behavior\HyLogBehavior.class.php 第 31 行.
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.000250s ]
+INFO: [ hy_log ] --END-- [ RunTime:0.000615s ]
+INFO: [ hy_log ] --START--
+NOTIC: [8] Undefined index: style G:\wamp\www\sis\Application\Common\Behavior\HyLogBehavior.class.php 第 23 行.
+NOTIC: [8] Undefined index: sql G:\wamp\www\sis\Application\Common\Behavior\HyLogBehavior.class.php 第 25 行.
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.000361s ]
+INFO: [ hy_log ] --END-- [ RunTime:-0.000364s ]
+NOTIC: [8] Undefined index: all G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 922 行.
+NOTIC: [8] Undefined index: tips G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 452 行.
+NOTIC: [8] Undefined index: search G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 428 行.
+NOTIC: [8] Undefined index: form G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 432 行.
+NOTIC: [8] Undefined index: form G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 432 行.
+NOTIC: [8] Undefined index: form G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 432 行.
+NOTIC: [8] Undefined index: title G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 426 行.
+NOTIC: [8] Undefined index: form G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 426 行.
+NOTIC: [8] Undefined index: search G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 428 行.
+NOTIC: [8] Undefined index: form G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 432 行.
+NOTIC: [8] Undefined index: form G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 432 行.
+NOTIC: [8] Undefined index: search G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 428 行.
+NOTIC: [8] Undefined index: form G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 432 行.
+NOTIC: [8] Undefined index: title G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 425 行.
+NOTIC: [8] Undefined index: title G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 426 行.
+NOTIC: [8] Undefined index: form G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 426 行.
+NOTIC: [8] Undefined index: search G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 428 行.
+NOTIC: [8] Undefined index: form G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 432 行.
+INFO: [ before_view ] --START--
+SQL: SHOW COLUMNS FROM `edu_frame_alert` [ RunTime:0.0121s ]
+SQL: SELECT `id`,`category`,`icon`,`message`,`url`,`type`,`create_time` FROM `edu_frame_alert` where `to_users` LIKE '%,18,%' AND ( IFNULL(`read_users`,'')='' OR `read_users` NOT LIKE '%,18,%') AND `status`=1 ORDER BY `id` DESC [ RunTime:0.0028s ]
+INFO: Run Common\Behavior\HyBeforeViewBehavior [ RunTime:0.020895s ]
+INFO: [ before_view ] --END-- [ RunTime:0.021368s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000545s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000823s ]
+NOTIC: [8] Undefined variable: _middle G:\wamp\www\sis\Runtime\Cache\System\9c07dc003a2105c82c74ba68c02f614c.php 第 194 行.
+NOTIC: [8] Undefined variable: _bottom G:\wamp\www\sis\Runtime\Cache\System\9c07dc003a2105c82c74ba68c02f614c.php 第 213 行.
+NOTIC: [8] Undefined variable: _script G:\wamp\www\sis\Runtime\Cache\System\9c07dc003a2105c82c74ba68c02f614c.php 第 272 行.
+NOTIC: [8] Undefined variable: hyMenu G:\wamp\www\sis\Runtime\Cache\System\9c07dc003a2105c82c74ba68c02f614c.php 第 285 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.130919s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.131279s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000801s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001052s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001522s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001813s ]
+
+[ 2015-12-12T16:33:43+08:00 ] ::1 /sis/index.php/System/HyAlert/ajax?q=list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001177s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001171s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001465s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001458s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001750s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) G:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `edu_frame_alert` [ RunTime:0.0092s ]
+INFO: [ hy_log ] --START--
+NOTIC: [8] Undefined variable: sql G:\wamp\www\sis\Application\Common\Behavior\HyLogBehavior.class.php 第 31 行.
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.000224s ]
+INFO: [ hy_log ] --END-- [ RunTime:0.000541s ]
+INFO: [ hy_log ] --START--
+NOTIC: [8] Undefined index: style G:\wamp\www\sis\Application\Common\Behavior\HyLogBehavior.class.php 第 23 行.
+NOTIC: [8] Undefined index: sql G:\wamp\www\sis\Application\Common\Behavior\HyLogBehavior.class.php 第 25 行.
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.000286s ]
+INFO: [ hy_log ] --END-- [ RunTime:-0.000258s ]
+NOTIC: [8] Undefined index: limit G:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 160 行.
+NOTIC: [8] Undefined index: order G:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 162 行.
+NOTIC: [8] Undefined index: field G:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 170 行.
+NOTIC: [8] Undefined index: where G:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 189 行.
+NOTIC: [8] Undefined offset: 4 G:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 214 行.
+NOTIC: [8] Undefined offset: 5 G:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 220 行.
+NOTIC: [8] Undefined offset: 4 G:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 221 行.
+NOTIC: [8] Undefined index: decrypt G:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 241 行.
+SQL: SHOW COLUMNS FROM `edu_frame_alert` [ RunTime:0.0101s ]
+SQL: SELECT 1 FROM `edu_frame_alert` `hy` INNER JOIN `edu_user` AS `user` ON hy.creator_id = user.id  WHERE ( to_users LIKE '%,18,%' ) AND hy.status = 1  [ RunTime:0.0018s ]
+INFO: [ hy_log ] --START--
+NOTIC: [8] Undefined index: style G:\wamp\www\sis\Application\Common\Behavior\HyLogBehavior.class.php 第 23 行.
+NOTIC: [8] Undefined index: sql G:\wamp\www\sis\Application\Common\Behavior\HyLogBehavior.class.php 第 25 行.
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.000303s ]
+INFO: [ hy_log ] --END-- [ RunTime:-0.017562s ]
+NOTIC: [8] Undefined index: hy G:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 140 行.
+NOTIC: [8] Undefined index: associate G:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 141 行.
+SQL: SHOW COLUMNS FROM `edu_frame_alert` [ RunTime:0.0138s ]
+SQL: SELECT hy.id,hy.to_users,hy.read_users,hy.category,hy.icon,hy.message,hy.url,hy.type,hy.creator_id,hy.create_time,hy.context,hy.status FROM `edu_frame_alert` `hy` INNER JOIN `edu_user` AS `user` ON hy.creator_id = user.id  WHERE ( to_users LIKE '%,18,%' ) AND hy.status = 1 ORDER BY hy.id desc LIMIT 10   [ RunTime:0.0017s ]
+NOTIC: [8] Undefined index: hidden G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 595 行.
+NOTIC: [8] Undefined index: hidden G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 595 行.
+NOTIC: [8] Undefined index: hidden G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 595 行.
+NOTIC: [8] Undefined index: hidden G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 595 行.
+NOTIC: [8] Undefined index: hidden G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 595 行.
+NOTIC: [8] Undefined index: title G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 595 行.
+NOTIC: [8] Undefined index: {callback} G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: callback G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 605 行.
+NOTIC: [8] Undefined index: {callback} G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: _checkbox G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 810 行.
+NOTIC: [8] Undefined index: {callback} G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: callback G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 605 行.
+NOTIC: [8] Undefined index: {callback} G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: _checkbox G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 810 行.
+NOTIC: [8] Undefined index: {callback} G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: callback G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 605 行.
+NOTIC: [8] Undefined index: {callback} G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: _checkbox G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 810 行.
+NOTIC: [8] Undefined index: {callback} G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: callback G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 605 行.
+NOTIC: [8] Undefined index: {callback} G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: _checkbox G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 810 行.
+NOTIC: [8] Undefined index: {callback} G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: callback G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 605 行.
+NOTIC: [8] Undefined index: {callback} G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: _checkbox G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 810 行.
+NOTIC: [8] Undefined index: {callback} G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: callback G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 605 行.
+NOTIC: [8] Undefined index: {callback} G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: _checkbox G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 810 行.
+NOTIC: [8] Undefined index: {callback} G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: callback G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 605 行.
+NOTIC: [8] Undefined index: {callback} G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: _checkbox G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 810 行.
+NOTIC: [8] Undefined index: {callback} G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: callback G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 605 行.
+NOTIC: [8] Undefined index: {callback} G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: _checkbox G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 810 行.
+NOTIC: [8] Undefined index: {callback} G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: callback G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 605 行.
+NOTIC: [8] Undefined index: {callback} G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: _checkbox G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 810 行.
+NOTIC: [8] Undefined index: {callback} G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: callback G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 605 行.
+NOTIC: [8] Undefined index: {callback} G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: _checkbox G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 810 行.
+NOTIC: [8] Undefined index: info G:\wamp\www\sis\Application\Common\Model\HyAllModel.class.php 第 470 行.
+INFO: [ hy_log ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.000102s ]
+INFO: [ hy_log ] --END-- [ RunTime:-0.092038s ]
+
+[ 2015-12-12T16:33:45+08:00 ] ::1 /sis/index.php/System/HyAlert/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000839s ]
+
+[ 2015-12-12T16:33:45+08:00 ] ::1 /sis/index.php/System/HyAlert/ajax?q=detail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000106s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001131s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001756s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001742s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.002056s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) G:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `edu_frame_alert` [ RunTime:0.0081s ]
+INFO: [ hy_log ] --START--
+NOTIC: [8] Undefined variable: sql G:\wamp\www\sis\Application\Common\Behavior\HyLogBehavior.class.php 第 31 行.
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.000190s ]
+INFO: [ hy_log ] --END-- [ RunTime:0.000479s ]
+INFO: [ hy_log ] --START--
+NOTIC: [8] Undefined index: style G:\wamp\www\sis\Application\Common\Behavior\HyLogBehavior.class.php 第 23 行.
+NOTIC: [8] Undefined index: sql G:\wamp\www\sis\Application\Common\Behavior\HyLogBehavior.class.php 第 25 行.
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.000292s ]
+INFO: [ hy_log ] --END-- [ RunTime:-0.000295s ]
+INFO: [ hy_log ] --START--
+NOTIC: [8] Undefined index: style G:\wamp\www\sis\Application\Common\Behavior\HyLogBehavior.class.php 第 23 行.
+NOTIC: [8] Undefined index: sql G:\wamp\www\sis\Application\Common\Behavior\HyLogBehavior.class.php 第 25 行.
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.000231s ]
+INFO: [ hy_log ] --END-- [ RunTime:-0.001113s ]
+SQL: UPDATE `edu_frame_alert` SET `read_users`=CONCAT(IF(IFNULL(`read_users`,'')='',',',`read_users`),'18,') WHERE `status` = 1 AND `id` IN ('219') AND ( to_users LIKE '%,18,%' AND ( IFNULL(`read_users`,'')='' OR `read_users` NOT LIKE '%,18,%' ) ) [ RunTime:0.5148s ]
+NOTIC: [2] Illegal string offset 'associate' G:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 141 行.
+NOTIC: [8] Undefined index: hy G:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 140 行.
+NOTIC: [8] Undefined index: associate G:\wamp\www\sis\Application\Common\Model\HyFrameModel.class.php 第 141 行.
+SQL: SELECT * FROM `edu_frame_alert` WHERE `id` = 219  [ RunTime:0.0794s ]
+SQL: SHOW COLUMNS FROM `edu_user` [ RunTime:0.0142s ]
+SQL: SELECT `name` FROM `edu_user` WHERE (  `id` IN (18)  )  [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `edu_user` WHERE (  `id` IN (18)  AND `id` IN (18)  )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: tpl G:\wamp\www\sis\Application\Common\Controller\HyAllController.class.php 第 90 行.
+INFO: [ before_view ] --START--
+SQL: SHOW COLUMNS FROM `edu_frame_alert` [ RunTime:0.0453s ]
+SQL: SELECT `id`,`category`,`icon`,`message`,`url`,`type`,`create_time` FROM `edu_frame_alert` where `to_users` LIKE '%,18,%' AND ( IFNULL(`read_users`,'')='' OR `read_users` NOT LIKE '%,18,%') AND `status`=1 ORDER BY `id` DESC [ RunTime:0.0029s ]
+INFO: Run Common\Behavior\HyBeforeViewBehavior [ RunTime:0.054998s ]
+INFO: [ before_view ] --END-- [ RunTime:0.055426s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000218s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000485s ]
+NOTIC: [8] Undefined index: json G:\wamp\www\sis\Runtime\Cache\System\c6d80dac29f4bb3371a39f454a43cf44.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040369s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041187s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001006s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001326s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000774s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001046s ]
+

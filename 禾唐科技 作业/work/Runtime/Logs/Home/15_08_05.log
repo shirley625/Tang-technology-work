@@ -1,0 +1,44 @@
+[ 2015-08-05T22:27:16+08:00 ] 127.0.0.1 /svn/SIS.JXNU/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.047477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.032868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.033228s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp\www\svn\SIS.JXNU\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.063879s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.064566s ]
+SQL: SHOW COLUMNS FROM `edu_friend_link` [ RunTime:0.1073s ]
+SQL: SELECT * FROM `edu_friend_link` WHERE `status` = 1 AND `type` = 0 ORDER BY rank desc LIMIT 4   [ RunTime:0.1794s ]
+SQL: SHOW COLUMNS FROM `edu_category` [ RunTime:0.1343s ]
+SQL: SELECT `pid`,`id`,`name`,`language_id` FROM `edu_category` WHERE `status` = 1 AND `nav_show` = 0 AND `switch` = 1 AND `language_id` = 2 ORDER BY rank desc  [ RunTime:0.0833s ]
+SQL: SHOW COLUMNS FROM `edu_language` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `edu_language` WHERE `status` = 1  [ RunTime:0.0309s ]
+SQL: SHOW COLUMNS FROM `edu_friend_link` [ RunTime:0.0252s ]
+SQL: SELECT `savepath`,`savename`,fl.url,fl.name FROM edu_friend_link fl INNER JOIN edu_frame_file as f ON fl.img=f.id  WHERE fl.status = 1 AND fl.type = 1 ORDER BY fl.create_time desc LIMIT 1   [ RunTime:0.2333s ]
+SQL: SHOW COLUMNS FROM `edu_banner` [ RunTime:0.0312s ]
+SQL: SELECT b.id,b.index_show,f.savepath,f.savename FROM edu_banner b INNER JOIN edu_frame_file AS f ON b.img_title = f.id  WHERE `status` = 1 AND `index_show` <> 0 ORDER BY b.create_time desc LIMIT 5   [ RunTime:0.0356s ]
+SQL: SELECT * FROM `edu_category` WHERE `status` = 1 AND `switch` = 1 AND `nav_show` = 1 AND `language_id` = 2 ORDER BY rank desc LIMIT 3   [ RunTime:0.0359s ]
+SQL: SHOW COLUMNS FROM `edu_details` [ RunTime:0.0318s ]
+SQL: SELECT `id`,`content` FROM `edu_details` WHERE `status` = 1 ORDER BY update_time desc  [ RunTime:0.7107s ]
+SQL: SELECT * FROM `edu_details` WHERE `status` = 1 AND `language_id` = 2 AND `category_id` = 0 LIMIT 6   [ RunTime:0.0247s ]
+SQL: SELECT * FROM `edu_details` WHERE `status` = 1 AND `language_id` = 2 AND `category_id` = 32 LIMIT 6   [ RunTime:0.0411s ]
+SQL: SELECT * FROM `edu_details` WHERE `status` = 1 AND `language_id` = 2 AND `category_id` = 33 LIMIT 6   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000742s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001117s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\svn\SIS.JXNU\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 136 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.190399s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.190696s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.016653s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.016934s ]
+INFO: [ action_end ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.000134s ]
+INFO: [ action_end ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.075546s ]
+INFO: [ app_end ] --END-- [ RunTime:0.075845s ]
+

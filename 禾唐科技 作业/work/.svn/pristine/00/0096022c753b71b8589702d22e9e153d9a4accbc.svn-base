@@ -1,0 +1,31 @@
+<extend name="Public:frameset"/>
+<block name="style">
+    <link rel="stylesheet" href="__PUBLIC__/assets/pages/styles/course.css" type="text/css"/>
+</block>
+<block name="page-body">
+    <div class="container good-course">
+        <div class="headline bottom30">
+            <h3>课程建设</h3>
+            <span class="triangle-lg2 glyphicon glyphicon-triangle-right"></span>
+        </div>
+        <volist name="good_course" id="v">
+            <div class="level">
+                <b>{$v['name']}</b>
+            </div>
+            <div class="row">
+                <volist name="v['children']" id="vv">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="thumbnail class-color">
+                            <a href="{:U('GoodCourse/lesson',array('course_id'=>$vv['id']))}"><img style="height: 90px; width: 100%" alt="" src="__PUBLIC__/uploads/{$vv['img_url']}"></a>
+                            <div class="caption">
+                                <h4 class="text-center"><i class="glyphicon glyphicon-edit text-success"></i>&nbsp;<a href="{:U('GoodCourse/lesson',array('course_id'=>$vv['id']))}" class="text-success">{$vv['name']}</a></h4>
+                                <div class="intro text-center text-info"><span class="incharge"><i class="glyphicon glyphicon-user"></i> {$vv['incharge_id']}</span> &nbsp;&nbsp;&nbsp;<span class="hit"><i class="glyphicon glyphicon-heart-empty"></i> {$vv['hit']}</span>人学习</div>
+                                <p>{$vv['description']|mb_substr=0,36,'utf8'}...</p>
+                            </div>
+                        </div>
+                    </div>
+                </volist>
+            </div>
+        </volist>
+    </div>
+</block>

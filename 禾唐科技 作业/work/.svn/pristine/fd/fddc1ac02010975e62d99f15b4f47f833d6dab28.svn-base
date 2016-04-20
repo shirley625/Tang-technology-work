@@ -1,0 +1,101 @@
+<extend name="Public:frameset"/>
+<block name="page-body">
+	<div class="container">
+		<div class="row">
+			<div class="page-body-left col-md-4">
+				<div class="side-nav">
+						<ul>
+							<li>
+								<a href="javascript:;">
+								<span class="side-nav-icon"><i class=" glyphicon glyphicon-list-alt"></i>
+								</span>
+								<span class="side-nav-text">招生简介</span>
+								<i class="triangle glyphicon glyphicon-play"></i>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+								<span class="side-nav-icon"><i class="glyphicon glyphicon-list-alt"></i>
+								</span>
+								<span class="side-nav-text">学院简介</span>
+								<i class="triangle glyphicon glyphicon-play"></i>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+								<span class="side-nav-icon"><i class="glyphicon glyphicon-list-alt"></i>
+								</span>
+								<span class="side-nav-text">学院简介</span>
+								<i class="triangle glyphicon glyphicon-play"></i>
+								</a>
+							</li>
+						</ul>			
+					</div>
+				</div>
+			<div class="page-body-right col-md-8">
+				<div class="row">
+						<div class="col-md-4"></div>
+						<div class="col-md-8 .col-xs-6">
+							<div class="ques-category">
+								<div class=" btn-group pull-right">
+								  <button type="button" class="ques-choose btn btn-info btn-lg hidden-xs hidden-sm">选择问题分类</button>
+								  <button type="button" class="ques-icon btn btn-info btn-lg hidden-xs hidden-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+								    <span class="caret"></span>
+								    <span class="sr-only">Toggle Dropdown</span>
+								  </button>
+								  <ul class="dro dropdown-menu" role="menu">
+								    <li><a href="#">生活</a></li>
+								    <li><a href="#">技术</a></li>
+								    <li><a href="#">高数</a></li>
+								    <li><a href="#">英语</a></li>
+								  </ul>
+								</div>
+							</div>
+							<div class="ques-type-category">
+								<div class=" btn-group pull-right">
+								  <button type="button" class="ques-type-choose btn btn-info btn-lg hidden-xs hidden-sm">选择问题类型</button>
+								  <button type="button" class="ques-type-icon btn btn-info btn-lg hidden-xs hidden-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+								    <span class="caret"></span>
+								    <span class="sr-only">Toggle Dropdown</span>
+								  </button>
+								  <ul class="dro dropdown-menu" role="menu">
+								    <li><a href="#">非精品课程</a></li>
+								    <li><a href="#">精品课程</a></li>
+								  </ul>
+								</div>
+							</div>
+						</div>	
+					</div>
+				<br />
+				
+				<div class="row">
+					<div class="col-md-6">
+						<div class="question-title">
+							<span>请将您的疑问告诉我们吧!<i class="glyphicon glyphicon-road"></i></span>
+							
+						</div>
+					</div>
+					<div class="col-md-2"></div>
+					<div class="col-md-4">
+						<div class="question-tip">
+							<span>您还可以输入255个字!</span>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="ques-edit row">
+					<script type="text/plain" id="content" style="width:1000px;height:240px;">
+   						 <p>这里我可以写一些输入提示</p>
+					</script>
+				</div>
+				
+				<div class="ques-submit row">
+					<button type="button" class="ques-btn btn btn-info pull-right">提交问题</button>
+				</div>
+				
+			</div>	
+		</div>
+	</div>
+	
+</block>

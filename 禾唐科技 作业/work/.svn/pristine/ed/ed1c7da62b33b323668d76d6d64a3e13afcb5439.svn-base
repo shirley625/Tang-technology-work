@@ -1,0 +1,65 @@
+<extend name="Public:frameset"/>
+<block name="page-body">
+	
+  <div class="container site-wrapper">
+	
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+		
+          <div class="inner cover" >
+           <form class="form-horizontal" method="post" action="__APP__/User/do_login">
+          
+           
+ 			  <div class="form-group"> 
+			  <div class="col-md-offset-3 col-md-6">
+			       
+				   <img class="center-block img-circle" src="__PUBLIC__/assets/home/pages/img/bg/loginLogo.png">
+				   
+				</div>
+			  </div>          
+           
+         <br>
+           
+			  <div class="form-group login-form">
+				<label for="inputEmail3" class="col-md-3 control-label">学号</label>
+				<div class="col-lg-6">
+				  <input type="text" name="xuehao" class="form-control input-lg" id="inputEmail3" placeholder="请输入你的学号">
+				</div>
+			  </div>
+			  <br>
+			  <div class="form-group login-form">
+				<label for="inputPassword3" class="col-md-3 control-label">密码</label>
+				<div class="col-md-6">
+				  <input type="password" name="userPwd"class="form-control input-lg" id="inputPassword3" placeholder="Password">
+				</div>
+			  </div>
+			   
+			  <div class="form-group">
+				<div class="col-md-offset-1 col-md-11">
+				  
+					<label class="col-md-4 control-label">
+					  <input type="checkbox">记住我
+					  
+					</label>
+					<div class="col-md-offset-3 col-md-4">
+					<button type="button" href="#" class="btn btn-link">忘记密码</button>
+				  </div>
+				</div>
+
+			  </div>
+			  <div class="form-group"> 
+			  <div class="col-sm-offset-3 col-md-6">
+				  <button type="submit" name="sub" class="btn btn-primary btn-lg btn-block">登陆</button>
+				</div>
+			  </div>
+			</form>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+</block>

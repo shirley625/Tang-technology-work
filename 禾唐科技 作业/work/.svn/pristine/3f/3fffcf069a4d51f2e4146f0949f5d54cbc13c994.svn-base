@@ -1,0 +1,130 @@
+<extend name="Public:frameset"/>
+<block name="style">
+    <link href="__PUBLIC__/assets/pages/styles/question-list.css" rel="stylesheet" type="text/css"/>
+</block>
+<block name="page-body">
+    <div class="container">
+        <div class="row">
+            <div class="page-body-left col-md-3">
+                <empty name="course_id">
+                    <div class="side-nav">
+                        <ul>
+                            <a href="{:U('Question/questionList')}">
+                                <li>
+                                    <i class=" glyphicon glyphicon-list-alt"></i> <span class="nav-text">答疑记录</span>
+                                </li>
+                            </a>
+                            <span class="after"></span>
+                            <a href="{:U('Question/askQuestion')}">
+                                <li>
+                                    <i class=" glyphicon glyphicon-list-alt"></i> <span class="nav-text">提问</span>
+                                </li>
+                            </a>
+                            <span class="after"></span>
+                            <a href="{:U('Question/myQuestion')}">
+                                <li  class="active">
+                                    <i class=" glyphicon glyphicon-list-alt"></i> <span class="nav-text">我的提问</span>
+                                </li>
+                            </a>
+                            <span class="after"></span>
+                        </ul>
+                    </div>
+                    <else/>
+                    <div class="side-nav">
+                        <ul>
+                            <a href="{:U('GoodCourse/lesson',array('course_id'=>$course_id))}">
+                                <li>
+                                    <i class=" glyphicon glyphicon-list-alt"></i> <span class="nav-text">返回精品课程</span>
+                                </li>
+                            </a>
+                            <span class="after"></span>
+                            <a href="{:U('Question/questionList',array('course_id'=>$course_id))}">
+                                <li>
+                                    <i class=" glyphicon glyphicon-list-alt"></i> <span class="nav-text">答疑记录</span>
+                                </li>
+                            </a>
+                            <span class="after"></span>
+                            <a href="{:U('Question/askQuestion',array('course_id'=>$course_id))}">
+                                <li>
+                                    <i class=" glyphicon glyphicon-list-alt"></i> <span class="nav-text">提问</span>
+                                </li>
+                            </a>
+                            <span class="after"></span>
+                            <a href="{:U('Question/myQuestion',array('course_id'=>$course_id))}">
+                                <li  class="active">
+                                    <i class=" glyphicon glyphicon-list-alt"></i> <span class="nav-text">我的提问</span>
+                                </li>
+                            </a>
+                            <span class="after"></span>
+                        </ul>
+                    </div>
+                </empty>
+            </div>
+            <div class="page-body-right col-md-8">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-1 top26">
+                        <ol class="my-breadcrumb">
+                            <li><a href="{:U('Index/index')}"><eq name="lang_id" value="2">首页 <else/>Home</eq></a></li>
+                            <li>互动平台</li>
+                            <li>我的提问</li>
+                        </ol>
+                    </div>
+                    <div class="col-md-12">
+                    <empty name="my_question">
+                            <div class=" empty_my_question alert alert-info"> 你还没有参与提问哦~</div>
+                        <else/>
+                        <div class="form-body">
+                            <div class="panel-group"  id="accordion" role="tablist" aria-multiselectable="true">
+                                <volist name="my_question" id="vo">
+                                    <div class="panel panel-default ql-panel">
+                                        <div class="ques-list-title panel-heading" role="tab" id="heading{$vo['id']}">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse{$vo['id']}" aria-expanded="true" aria-controls="collapse{$vo['id']}" title={$vo['title']}>
+                                                    <div class="row">
+                                                        <div class="col-md-9 col-xs-12">
+                                                            {$vo['ask_id']}&nbsp;:&nbsp;{$vo['title']|mb_substr=###,0,30,'utf-8'}
+                                                        </div>
+                                                        <div class="col-md-3 col-xs-12 pull-right" style="text-align:right;">
+                                                            {$vo['create_str_time']}
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse{$vo['id']}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading{$vo['id']}">
+                                            <div class="ques-list-content panel-body">
+                                                <ul class="list-group detail-list">
+                                                    <div class="row">
+										  		    <span>{$vo['answer']}</span>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                            <div class="ques-list-footer panel-footer ql-panel">
+                                                <div class="row">
+                                                    <div class="col-md-7">
+                                                <span>
+                                                    <volist name="vo['children']" id='ch'>
+                                                        {$ch['tag']}&nbsp;
+                                                    </volist>
+                                                </span>
+                                                    </div>
+                                                    <div class="col-md-5 pull-right">
+                                                        <span>{$vo['statusText']}&nbsp;|&nbsp;{$vo['is_open']}</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </volist>
+                            </div>
+                        </div>
+                        <div class="page-div">
+                            <div class="col-md-12 xs-md-8 pull-right ">{$page}</div>
+                        </div>
+                    </empty>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</block>

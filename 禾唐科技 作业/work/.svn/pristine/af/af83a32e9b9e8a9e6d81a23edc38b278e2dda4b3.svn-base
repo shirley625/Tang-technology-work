@@ -1,0 +1,7 @@
+<?php
+return array(
+	//'配置项'=>'配置值'
+	'INDEX_ARTICLE_NUM' => 10,
+    'QUESTION_SHOW_NUM' => 10,
+    'URL_MODEL'			=>  1,
+);

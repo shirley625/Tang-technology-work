@@ -1,0 +1,43 @@
+<?php
+namespace Home\Controller;
+use Think\Controller;
+class IndexController extends BaseController {
+
+	public function _initialize(){
+        parent::_initialize();
+	}
+
+    public function index(){
+        $mFriendLink = D('friend_link');
+        $topic=$mFriendLink->getTopicLink();
+        $mBanner = D('Banner');
+    	$banner=$mBanner->getBanner();
+        $mCategory = D('Category');
+        $subNav=$mCategory->getSubNav();
+        $mDetail = D('Details');
+        $picUrl = $mDetail->get_first_img();
+        $wishes=$mDetail->getDetails2('领导致辞');
+        $news=$mDetail->getDetails('学院新闻');
+        $notice = $mDetail->getDetails2('公告通知');
+//         $announce = D('Announce')->getAnnounce();
+        foreach($subNav as $k=>$v) {
+            switch ($v['name']) {
+                case '互动平台' :
+                    $subNav[$k]['url'] = 'Question/questionList';
+                    break;
+                case '课程建设' :
+                    $subNav[$k]['url'] = 'GoodCourse/course';
+                    break;
+                default:
+                    $subNav[$k]['url'] = 'Home/Article/category/category_id/'.M('category')->where(array('pid'=>$v['id'],'status'=>array('eq',1)))->getField('id').'/lan_id/'.ss_lanid();
+            }
+        }
+        $this->assign('topic',$topic)->assign('picUrl',$picUrl)
+            ->assign('banner',$banner)->assign('subNav',$subNav)
+            ->assign('wishes',$wishes)->assign('news',$news)
+            ->assign('notice',$notice)
+            ->assign('se_lan_id',ss_lanid())
+            ->assign('array_count',count($subNav))->display();
+    }
+    
+}

@@ -1,0 +1,165 @@
+<?php
+namespace Home\Model;
+use Think\Model;
+class DetailsModel extends BaseModel {
+
+    public function getDetail($category_id){
+        $twoName = M('category')->where(array('id'=>$category_id))->getField('name');
+        //  dump($twoName);
+        $article = $this->alias('d')
+            ->join('edu_category AS c ON d.category_id = c.id')
+            ->where(array('d.status'=>array("eq",1),'d.is_publish'=>array('eq',1),'d.category_id'=>$category_id ? $category_id : array('gt',0)))
+            ->field('d.id,d.title,d.create_time,c.name as category_name,d.category_id,c.pid as c_pid,d.language_id')
+            ->page($_GET['p'],C('INDEX_ARTICLE_NUM'))
+            ->select();
+        $pid = M('category')->where(array('id'=>$category_id))->getField('pid');
+        if($pid!=0) {
+            $leftNav = M('category')->where(array('pid' => $pid,'switch'=>1))->getField('id,name');
+        };
+        $article[0]['children'] = $leftNav;
+        $article[0]['twoName'] = $twoName ;
+        return $article;
+    }
+
+
+
+    public function getDetails2($name){
+        $category_id = M('category')->where(array('name'=>array('eq',$name)))->getField('id');
+        //dump($category_id);
+        return $this->where(array('status'=>1,'category_id'=>$category_id,'is_public'=>1,'language_id'=>ss_lanid()))->order('create_time desc')->limit(6)->select();
+    }
+
+    public function Detail($content_id){
+        $this->where(array('id'=>$content_id))->setInc('hit');//点击量 +1
+        $record=$this->alias('d')
+            ->where(array('d.status'=>1,'d.is_publish'=>array('eq',1),'d.id'=>$content_id,'d.language_id'=>ss_lanid()))
+            ->join($this->dbPrex.'category AS c ON d.category_id=c.id')
+            ->join($this->dbPrex.'user AS u ON d.user_id=u.id','LEFT')
+            ->field('d.id,d.hit,d.user_id,d.title,d.content,d.create_time,d.update_time,c.pid as c_pid,c.name as category_name,u.name AS user_name')
+           //->limit($count?$count-1:$count,$count?3:4)
+            ->select();
+        $categoryPname = M('category')
+            ->order('id asc')
+            ->where(array('status'=>1,'switch'=>1))
+            ->getField('id,name');
+        foreach ($record as $k=>$v){
+			
+            if($v['c_pid']!=0){
+                $pid=$v['c_pid'];
+                $record[$k]['c_name']=$categoryPname[$pid];
+            }
+        }
+        if($v['c_pid']!=0){
+
+            $leftNav = M('category')->where(array('pid'=>$v['c_pid'],'status'=>1,'switch'=>1))->getField('id,name');
+        }
+        $record[0]['children'] =  $leftNav;
+          //dump($leftNav);
+//         dump($record);
+        return $record;
+    }
+
+    public function getCount($category_id){
+        $count= $this->where(array('status'=>array('eq',1),'is_publish'=>array('eq',1),'category_id'=>$category_id ? $category_id :array("gt",0)))->count();
+        //dump($a);
+        return $count;
+    }
+
+    public function articlePage($count , $one_count){
+        $Page       = new \Think\Page($count,$one_count);
+        $Page->rollPage = '5';
+        $Page->lastSuffix = false;
+        $Page->setConfig('header', '共<b>%TOTAL_ROW%</b>条记录&nbsp;第<b>%NOW_PAGE%</b>页/共<b>%TOTAL_PAGE%</b>页');
+        $Page->setConfig('FIRST','第一页');
+        $Page->setConfig('theme','%FIRST% %UP_PAGE%  %LINK_PAGE%  %DOWN_PAGE% %END% %HEADER%');
+        $Page->setConfig('prev', '上一页');
+        $Page->setConfig('next', '下一页');
+        $Page->setConfig('first','第一页');
+        $Page->setConfig('last','最后一页');
+
+        $show = $Page->show();
+
+       // dump($show);
+        return $show;
+    }
+
+    public function getParentTitle($category_id){
+        $mAc=M('category');
+        $pid=$mAc->where(array('id'=>$category_id,'status'=>array('eq',1)))->getField('pid');
+        $oneName=$mAc->where(array('id'=>$pid,'status'=>array('eq',1)))->getField('name');
+        // dump($oneName);
+        return $oneName;
+    }
+
+
+    public function getDetails($name){
+        //$category_id = M('category')->where(array('name'=>array('eq',$name)))->getField('id');
+//        dump($category_id);
+        return $this->where(array('status'=>1,'is_public'=>1,'language_id'=>ss_lanid()))->order('create_time desc')->limit(6)->select();
+    }
+
+    public function searchFun($input){
+        if(!$input) return false;
+        $where['title']=array('like','%'.$input.'%');
+        $where['content']=array('like','%'.$input.'%');
+        $where['name']=array('like','%'.$input.'%');
+        $where['_logic']='or';
+        $map['_complex']=$where;
+        return $this->alias('d')
+            ->join($this->dbPrex.'category AS c ON d.category_id = c.id')
+            ->field('title,content,name AS category_name,d.id AS d_id,c.id AS c_id,d.create_time,d.language_id')->where($map)->where(array('c.status'=>1,'d.status'=>1,'d.is_publish'=>array('eq',1)))->select();
+    }
+    public function getNewsPic(){
+        $info=$this->alias('d')
+            ->join($this->dbPrex.'frame_file AS f ON d.file_id=f.id')
+            ->where(array('d.status'=>1,'d.is_publish'=>array('eq',1),'d.file_id'=>array('neq','')))->order('d.create_time desc')->limit(5)
+            ->field('savename,savepath,f.name,file_id')
+            ->select();
+        foreach($info as $k=>$v){
+            $imgUrl[]=$v['savepath'].$v['savename'];
+        }
+//        dump($imgUrl);
+        return $imgUrl;
+
+    }
+
+    public function get_category($content_id){
+
+        return $this->where(array(
+            'id' => $content_id,
+            'status' => array('eq',1),
+            'is_publish'=>array('eq',1),
+        ))->getField('category_id');
+
+    }
+
+    public function get_first_img(){
+
+        $content_arr = $this->alias('d')
+            ->join('edu_category AS c ON d.category_id = c.id')
+            ->where(array(
+            'd.status'=>array('eq',1),
+            'c.language_id' => ss_lanid(),
+            'd.is_publish'=>array('eq',1),
+        ))->order('d.create_time desc')->field('d.id,d.content')->select();
+        foreach($content_arr as $k=>$v){
+            $result = preg_match('/<img.*\/>/iUs', $v['content'], $img_arr);
+            if($result){
+                $img_arrs[$k]['url'] = $img_arr[0];
+                $img_arrs[$k]['content_id'] = $v['id'];
+            }
+        }
+        $img = array();
+        foreach($img_arrs as $k=>$v){
+            $img[] = $v;
+        }
+        $img_arrs = array();
+        foreach($img as $k=>$v ){
+            if($k<5)
+                $img_arrs[] = $v;
+            else break;
+        }
+        //dump($img_arrs);
+        return $img_arrs;
+    }
+}

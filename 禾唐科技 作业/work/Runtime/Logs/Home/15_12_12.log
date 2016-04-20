@@ -1,0 +1,49 @@
+[ 2015-12-12T16:32:59+08:00 ] ::1 /sis/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.017122s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001965s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002349s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\wamp\www\sis\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.023532s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.024024s ]
+SQL: SHOW COLUMNS FROM `edu_friend_link` [ RunTime:0.1012s ]
+SQL: SELECT * FROM `edu_friend_link` WHERE `status` = 1 AND `type` = 0 ORDER BY rank desc LIMIT 4   [ RunTime:0.0206s ]
+SQL: SHOW COLUMNS FROM `edu_announce` [ RunTime:0.1032s ]
+SQL: SELECT * FROM `edu_announce` WHERE `status` = 1 ORDER BY create_time desc LIMIT 5   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `edu_category` [ RunTime:0.0417s ]
+SQL: SELECT `pid`,`id`,`name`,`language_id` FROM `edu_category` WHERE `status` = 1 AND `nav_show` = 0 AND `switch` = 1 AND `language_id` = 2 ORDER BY rank desc  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `edu_language` [ RunTime:0.0815s ]
+SQL: SELECT * FROM `edu_language` WHERE `status` = 1  [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `edu_friend_link` [ RunTime:0.0085s ]
+SQL: SELECT `savepath`,`savename`,fl.url,fl.name FROM edu_friend_link fl INNER JOIN edu_frame_file as f ON fl.img=f.id  WHERE fl.status = 1 AND fl.type = 1 ORDER BY fl.create_time desc LIMIT 1   [ RunTime:0.1108s ]
+SQL: SHOW COLUMNS FROM `edu_banner` [ RunTime:0.0837s ]
+SQL: SELECT b.id,b.index_show,f.savepath,f.savename FROM edu_banner b INNER JOIN edu_frame_file AS f ON b.img_title = f.id  WHERE `status` = 1 AND `index_show` <> 0 ORDER BY b.create_time desc LIMIT 5   [ RunTime:0.0019s ]
+SQL: SELECT * FROM `edu_category` WHERE `status` = 1 AND `switch` = 1 AND `nav_show` = 1 AND `language_id` = 2 ORDER BY rank desc LIMIT 5   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `edu_details` [ RunTime:0.1048s ]
+SQL: SELECT d.id,d.content FROM edu_details d INNER JOIN edu_category AS c ON d.category_id = c.id  WHERE d.status = 1 AND c.language_id = 2 AND d.is_publish = 1 ORDER BY d.create_time desc  [ RunTime:0.4013s ]
+SQL: SHOW COLUMNS FROM `edu_category` [ RunTime:0.0080s ]
+SQL: SELECT `id` FROM `edu_category` WHERE `name` = '领导致辞' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `edu_details` WHERE `status` = 1 AND `category_id` = 35 AND `language_id` = 2 ORDER BY create_time desc LIMIT 6   [ RunTime:0.0500s ]
+SQL: SELECT * FROM `edu_details` WHERE `status` = 1 AND `language_id` = 2 ORDER BY create_time desc LIMIT 6   [ RunTime:0.0035s ]
+SQL: SELECT `id` FROM `edu_category` WHERE `name` = '公告通知' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `edu_details` WHERE `status` = 1 AND `category_id` = 18 AND `language_id` = 2 ORDER BY create_time desc LIMIT 6   [ RunTime:0.0026s ]
+SQL: SELECT `id` FROM `edu_category` WHERE `pid` = 12 AND `status` = 1 LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000923s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001270s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.277481s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.277783s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.011023s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011366s ]
+INFO: [ action_end ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.000159s ]
+INFO: [ action_end ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.038161s ]
+INFO: [ app_end ] --END-- [ RunTime:0.038526s ]
+

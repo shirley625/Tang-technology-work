@@ -1,0 +1,67 @@
+<extend name="Public:frameset"/>
+<block name="page-body">
+    <div class="container">
+        <div class="panel panel-default bac" style="margin-top:20px;">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-6 col-xs-12"><p class='text-left'>Number of Issue: {$detail[0]['user_no']}</p></div>
+                    <div class="col-md-6 col-xs-12"><p class='text-right'> &mdash;January 1st,{$detail[0]['year']}</p></div>
+                </div>
+                <br><br>
+                <h4>TRANSCRIPT OF ACADEMIC RECORDS	</h4>
+                <h4>To whom it may concern:</h4>
+                <dl class="dl-horizontal">
+                    <dt>Personal Data:</dt>
+                    <dd>
+                        <p>Name In Full	    : {$detail['0']['uname']}</p>
+                        <p>Nationality			: {$detail['0']['country']}</p>
+                        <p>Name Date of Birth	: {$detail['0']['birth']}</p>
+                        <p>Date of Admission	: {$detail['0']['year']}</p>
+                        <p>College			: School of Intercultural Studies</p>
+                        <p>Major				: Chinese Language </p>
+                    </dd>
+                    <dt>Grading System: </dt>
+                    <u> A: very good (90-100) B: good (80-89) C: mediocre (70-79) D: passing (60-69)</u>
+                </dl>
+            </div>
+        </div>
+        <div class="panel panel-default grade-table">
+            <!-- Default panel contents -->
+            <div class="panel-heading pnhead" align='center'>各科成绩详情</div>
+            <!-- Table -->
+            <!-- Single button -->
+            <form action="{:U('Score/score')}" method="post">
+                <div class="row year-select">
+                    <div class="col-md-2 col-xs-12" style="padding-right: 0">
+                        <select class="form-control year-form" name="year" style="width: auto; margin-top: 10px; margin-left: 20px;">
+                            <option>选择年份：</option>
+                            <volist name="Options" id="vo">
+                                <option value="{$vo['year']}">{$vo['year']}</option>
+                            </volist>
+                        </select>
+
+                    </div>
+                    <div class="col-md-3" style="padding-left: 0;">
+                        <input type="submit" class="btn btn-primary ensure" value="确定" style="margin-top: 10px;">
+
+                    </div>
+                </div>
+            </form>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead align='center'>
+                    <tr><th>Year</th><th>Subject</th><th>Grade </th><th>Credit</th><th>Semester</th></tr>
+                    　</thead>
+                    　
+                    　<tbody>
+                <volist name="detail" id="vo">
+                    <tr><td>{$vo['year']}</td><td>{$vo['name']}</td><td> 95</td><td> 3</td><td>{$vo['term']}</td></tr>
+                    　　　　　　	 </volist>
+                </tbody>
+
+                </table>
+            </div>
+        </div>
+        <div class="bac hei"></div>
+    </div>
+</block>

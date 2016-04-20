@@ -1,0 +1,62 @@
+<?php
+return array(
+		// 自动加载静态资源（HyFrameController）
+		'LOAD_ASSETS' =>array(
+			
+			'PLUGINS'	=>	array(
+					'CSS'	=>	array(
+//							'GoodCourse/all'	=>	'umeditor/themes/default/css/umeditor.css',
+//							'CourseView/all'=>'umeditor/themes/default/css/umeditor.css',
+//								'CourseViewI/all'=>'umeditor/themes/default/css/umeditor.css',
+//								'GoodCourseP/all'=>'umeditor/themes/default/css/umeditor.css'
+					),
+					'JS'	=>	array(
+							'GoodCourse/all'	=>	array(
+
+                                'ueditor/ueditor.config.js',
+                                'ueditor/ueditor.all.min.js',
+                                'ueditor/lang/zh-cn/zh-cn.js'
+							),
+							'CourseView/all'=>array(
+
+                                'ueditor/ueditor.config.js',
+                                'ueditor/ueditor.all.min.js',
+                                'ueditor/lang/zh-cn/zh-cn.js'
+
+								),
+							'CourseViewI/all'=>array(
+                                'ueditor/ueditor.config.js',
+                                'ueditor/ueditor.all.min.js',
+                                'ueditor/lang/zh-cn/zh-cn.js'
+								),
+							'GoodCourseP/all'=>array(
+								'ueditor/ueditor.config.js',
+                                'ueditor/ueditor.all.min.js',
+                                'ueditor/lang/zh-cn/zh-cn.js'
+
+                            )
+					)
+			),
+            'PAGES'		=>	array(
+                'CSS'	=>	array(
+
+                ),
+                'JS'	=>	array(
+                    'CourseViewI/all' =>array(
+                            'couse-fullscreen.js'
+                    ),
+                    'CourseView/all' =>array(
+                            'couse-fullscreen.js'
+                    ),
+                    'GoodCourse/all'=>array(
+                        'couse-fullscreen.js'
+                    ),
+                    'GoodCourseP/all'=>array(
+                        'couse-fullscreen.js'
+                    )
+                )
+            ),
+
+		),
+	
+);

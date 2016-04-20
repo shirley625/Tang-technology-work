@@ -1,0 +1,89 @@
+<extend name="Public:frameset"/>
+<block name="style"><link rel="stylesheet" type="text/css" href="__PUBLIC__/assets/pages/styles/article.css" /></block>
+<block name="page-body">
+    <div class="container">
+        <div class="row">
+            <empty name="category_article">
+            <div class="col-md-10 col-md-offset-1 top30">
+                <div class="headline col-md-12" style="top:0; margin-bottom: 30px">
+                    <h3>检索结果</h3>
+                    <span class="triangle-lg2 glyphicon glyphicon-triangle-right"></span>
+                </div>
+               <!-- 检索结果显示 -->
+                <div class="col-md-12">
+                    <empty name="searchResult">
+                    <p>抱歉，未找到与“{$input}”相关的信息</p>
+                    <else/>
+                    <volist name="searchResult" id="vo">
+                        <div class="article-list">
+                            <div class="row">
+                                <div class="col-md-8 col-md-offset-1">
+                                    <a href="{:U('Article/detail',array('content_id'=>$vo['d_id'],'lan_id'=>$lang_id))}" id="{$vo['d_id']}" >{$vo['title']}</a>
+                                </div>
+                                <empty name="vo['create_time']">
+                                    <div class="col-md-3"></div>
+                                    <else/>
+                                    <div class="col-md-3">{:date('Y-m-d',$vo['create_time'])}</div>
+                                </empty>
+                            </div>
+                        </div>
+                        <hr/>
+                    </volist>
+                    </empty>
+                </div>
+            </div>
+            <else/><!-- 分界 -->
+                <div class="col-md-3">
+                    <ul class="side-nav">
+                        <volist name ="category_article" id="ca">
+                            <volist name="ca['children']" id="ca1">
+                                <a href="{:U('Article/category',array('category_id'=>$key,'lan_id'=>$lang_id))}">
+                                    <li>
+                                        <span class="side-nav-icon"><i class=" glyphicon glyphicon-th-large"></i></span>
+                                        <span class="side-nav-text">{$ca1}</span>
+                                    </li>
+                                </a>
+                            </volist>
+                        </volist>
+                    </ul>
+                </div>
+                <div class="col-md-8">
+                    <div class="headline row">
+                        <div class="col-md-12 col-xs-12">
+                            <ol class="my-breadcrumb">
+                                <li><a href="{:U('Index/index')}"><eq name="lang_id" value="2">首页 <else/>Home</eq></a></li>
+
+                                <empty name="oneName"><li style="display: none"></li><else/><li>{$oneName}</li></empty>
+                                <li>{$category_article[0]['twoName']}</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <br/><hr/>
+                    <volist name="category_article" id="ca">
+                        <div class="article-list">
+                            <empty name="count">
+                            <div class="tips row"><div class="col-md-8 col-md-offset-1"><p>暂无文章</p></div></div>
+                            <else/>
+                            <div class="row">
+                                <div class="col-md-8 col-md-offset-1">
+                                    <a href="{:U('Article/detail',array('content_id'=>$ca['id'],'lan_id'=>$lang_id))}" id="{$ca['id']}" >{$ca['title']|mb_substr=0,26,'utf8'}</a>
+                                </div>
+                                <empty name="ca['create_time']">
+                                    <div class="col-md-3"></div>
+                                    <else/>
+                                    <div class="col-md-3">{:date('Y-m-d',$ca['create_time'])}</div>
+                                </empty>
+                            </div>
+                            </empty>
+                        </div>
+                        <hr/>
+                    </volist>
+                    <br>
+                    <div class="row page">
+                        <div class="col-md-10 col-md-offset-1 paging">{$page}</div>
+                    </div>
+                </div>
+            </empty>
+        </div>
+    </div>
+</block>
